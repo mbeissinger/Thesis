@@ -1,6 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example deep architecture.}}{4}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Principal component analysis.}}{6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A graphical representation of a Boltzmann machine. Each undirected edge represents dependency; in this example there are 3 hidden units and 4 visible units.}}{7}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A Restricted Boltzmann machine.}}{7}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Stacked RBM.}}{8}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Stacked auto-encoder.}}{10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

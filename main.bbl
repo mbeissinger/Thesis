@@ -1,3 +1,19 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{bach05}
+Francis~R. Bach and Michael~I. Jordan.
+\newblock A probabilistic interpretation of canonical correlation analysis.
+\newblock Technical Report 688, University of California, Berkeley, April 2005.
+
+\bibitem{bengio13}
+Yoshua Bengio.
+\newblock Deep learning of representations: Looking forward.
+\newblock {\em CoRR}, abs/1305.0445, 2013.
+
+\bibitem{bengio12}
+Yoshua Bengio, Aaron~C. Courville, and Pascal Vincent.
+\newblock Unsupervised feature learning and deep learning: A review and new
+  perspectives.
+\newblock {\em CoRR}, abs/1206.5538, 2012.
 
 \end{thebibliography}

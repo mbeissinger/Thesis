@@ -2,8 +2,12 @@
 \contentsline {section}{\numberline {1.1}new section}{1}
 \contentsline {chapter}{\numberline {2}Related Work}{2}
 \contentsline {chapter}{\numberline {3}Background}{3}
-\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks}{4}
-\contentsline {chapter}{\numberline {5}Model 1: (alternating)}{5}
-\contentsline {chapter}{\numberline {6}Model 2: (joint)}{6}
-\contentsline {chapter}{\numberline {7}Discussion}{7}
-\contentsline {chapter}{\numberline {8}Conclusion}{8}
+\contentsline {section}{\numberline {3.1}Representation Learning}{3}
+\contentsline {section}{\numberline {3.2}Interpretations of Deep Architectures}{4}
+\contentsline {section}{\numberline {3.3}Probabilistic models: restricted boltzmann machine (RBM)}{6}
+\contentsline {section}{\numberline {3.4}Direct encoding models: auto-encoder}{9}
+\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks}{11}
+\contentsline {chapter}{\numberline {5}Model 1: (alternating)}{12}
+\contentsline {chapter}{\numberline {6}Model 2: (joint)}{13}
+\contentsline {chapter}{\numberline {7}Discussion}{14}
+\contentsline {chapter}{\numberline {8}Conclusion}{15}

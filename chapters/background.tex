@@ -33,7 +33,7 @@ From a probabilistic viewpoint, PCA is simply finding the principal eigenvectors
 
 Note that because PCA is a linear transformation of the input \(x\), it cannot really be stacked in layers because the composition of linear operations is just another linear operation. There would be no abstraction benefit of multiple layers. To show these two methods of analysis, this section will examine stacking Restricted Boltzmann Machines (RBM) from a probability viewpoint and nonlinear auto-encoders from a direct encoding viewpoint.
 
-\section{Probabilistic models: restricted boltzmann machine (RBM)}
+\subsection{Probabilistic models: restricted boltzmann machine (RBM)}
 A Boltzmann machine is a network of symmetrically-coupled binary random variables or units. This means that it is a fully-connected, undirected graph. This graph can be divided into two parts:
 
 \begin{enumerate}
@@ -79,7 +79,7 @@ There are a few drawbacks to the probabilistic approach to deep architectures:
 \item Calculating this distribution over latent variables still does not give a usable feature vector to train a final classifier to make this algorithm useful for AI tasks. For example, we calculate all of these hidden distributions that explain the variations over the handwriting digit recognition problem, but they do not give a final classification of a number. Actual feature values are normally derived from the distribution, taking the latent variable's expected value, which are then used as the input to a normal machine learning classifier, such as logistic regression.
 \end{enumerate}
 
-\section{Direct encoding models: auto-encoder}
+\subsection{Direct encoding models: auto-encoder}
 To get around the problem of deriving useful feature values, an auto-encoder is a non-probabilistic alternative approach to deep learning where the hidden units produce usable numeric feature values. An auto-encoder directly maps an input \(x\) to a hidden layer \(h\) through a parameterized closed-form equation called an encoder. Typically, this encoder function is a nonlinear transformation of the input to \(h\) in the form:
 \[f_\Theta (x) = s_f (b + Wx)\]
 
@@ -101,3 +101,16 @@ Stacking auto-encoders in layers is the same process as with RBMs.
 One disadvantage of auto-encoders is that they can easily memorize the training data (i.e. find the model parameters that map every input seen to a perfect reconstruction with zero error) given enough hidden units \(h\). To combat this problem, regularization is necessary, which gives rise to variants such as sparse auto-encoders, contractive auto-encoders, or denoising auto-encoders.
 
 A practical advantage of auto-encoder variants is that they define a simple, tractable optimization objective that can be used to monitor progress.
+
+\section{Denoising Auto-encoders}
+Denoising auto-encoders [cite bengio denoising autoencoders as generative models here] are a class of direct encoding models that use synthetic noise over the inputs during training to prevent overfitting. The basic algorithm is as follows [convert this to code layout from bengio paper]:
+\begin{enumerate}
+\item Corrupt input \(X\) to \(~X\) through an arbitrary corruption process. X~ = C(X~|X)
+\item Encode corrupted input to hidden layer
+\item Decode hidden layer to original input, optimizing over reconstruction error.
+\end{enumerate}
+
+Several interesting properties emerge due to the noise. You are more likely to find distributions that concentrate on the data manifold. You learn essentially a mixture of gaussian models. Summarize Bengio paper here.
+
+
+

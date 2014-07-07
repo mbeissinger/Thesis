@@ -21,7 +21,7 @@
 	
 	\begin{titlepage}
 		\begin{center}
-			{\singlespacing \LARGE \uppercase{Recurrent Deep Generative Stochastic Networks}\\[12pt]}
+			{\singlespacing \LARGE \uppercase{Recurrent Deep Generative Stochastic Networks for Sequence Prediction}\\[12pt]}
 			
 			{\Large Markus B. Beissinger\\[12pt]}
 			
@@ -49,7 +49,7 @@
 	\pagenumbering{roman}
 
 	\chapter*{Acknowledgements}
-	I would like to thank Lyle Ungar for his insights throughout advising this thesis. I would also like to thank Mark Liberman (CIS, Linguistics, University of Pennsylvania) for his work on the thesis committee. Finally, I would like to thank Li Yao (Computer Science and Operations Research, Universit\'{e} de Montr\'{e}al) from Yoshua Bengio\rq{}s group for the Theano framework and help with starter code.
+	I would like to thank Lyle Ungar for his invaluable insights and methods of thinking throughout advising this thesis. I would also like to thank Mark Liberman (CIS, Linguistics, University of Pennsylvania) for his work on the thesis committee. Finally, I would like to thank Li Yao (Computer Science and Operations Research, Universit\'{e} de Montr\'{e}al) from Yoshua Bengio\rq{}s group for the Theano framework and help with starter code.
 	
 	\chapter*{Abstract}
 	\input{chapters/abstract}
@@ -68,11 +68,14 @@
 	\chapter{Background}
 	\input{chapters/background}
 	
-	\chapter{General Methodology: Deep Generative Stochastic Networks}
+	\chapter{General Methodology: Deep Generative Stochastic Networks (GSN)}
+	\input{chapters/general_methodology}
 	
-	\chapter{Model 1: (alternating)}
+	\chapter{Model 1: Expectation Maximization method for training a recurrent deep GSN}
+	\input{chapters/model1}
 	
-	\chapter{Model 2: (joint)}	
+	\chapter{Model 2: Online method for training a recurrent deep GSN}	
+	\input{chapters/model2}
 	
 	\chapter{Discussion}
 	\input{chapters/discussion}

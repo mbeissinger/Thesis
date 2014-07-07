@@ -1,13 +1,22 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}new section}{1}
 \contentsline {chapter}{\numberline {2}Related Work}{2}
 \contentsline {chapter}{\numberline {3}Background}{3}
 \contentsline {section}{\numberline {3.1}Representation Learning}{3}
 \contentsline {section}{\numberline {3.2}Interpretations of Deep Architectures}{4}
-\contentsline {section}{\numberline {3.3}Probabilistic models: restricted boltzmann machine (RBM)}{6}
-\contentsline {section}{\numberline {3.4}Direct encoding models: auto-encoder}{9}
-\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks}{11}
-\contentsline {chapter}{\numberline {5}Model 1: (alternating)}{12}
-\contentsline {chapter}{\numberline {6}Model 2: (joint)}{13}
+\contentsline {subsection}{\numberline {3.2.1}Probabilistic models: restricted boltzmann machine (RBM)}{6}
+\contentsline {subsection}{\numberline {3.2.2}Direct encoding models: auto-encoder}{9}
+\contentsline {section}{\numberline {3.3}Denoising Auto-encoders}{10}
+\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks (GSN)}{11}
+\contentsline {section}{\numberline {4.1}Algorithm}{11}
+\contentsline {section}{\numberline {4.2}Analysis}{11}
+\contentsline {section}{\numberline {4.3}Extension to recurrent deep GSN}{11}
+\contentsline {chapter}{\numberline {5}Model 1: Expectation Maximization method for training a recurrent deep GSN}{12}
+\contentsline {section}{\numberline {5.1}Assumptions}{12}
+\contentsline {section}{\numberline {5.2}Algorithm}{12}
+\contentsline {section}{\numberline {5.3}Analysis}{12}
+\contentsline {chapter}{\numberline {6}Model 2: Online method for training a recurrent deep GSN}{13}
+\contentsline {section}{\numberline {6.1}Assumptions}{13}
+\contentsline {section}{\numberline {6.2}Algorithm}{13}
+\contentsline {section}{\numberline {6.3}Analysis}{13}
 \contentsline {chapter}{\numberline {7}Discussion}{14}
 \contentsline {chapter}{\numberline {8}Conclusion}{15}

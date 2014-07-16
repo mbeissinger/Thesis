@@ -1,7 +1,7 @@
-Current machine learning algorithms' performance depend heavily on the particular features of the data chosen as inputs. For example, document classification (such as marking emails as spam or not) can be performed by breaking down the input document into bag-of-words or n-grams as features. Choosing the correct feature representation of input data, or feature engineering, is a way that people can bring prior knowledge of a domain to increase an algorithm's computational performance and accuracy. To move towards general artificial intelligence, algorithms need to be less dependent on this feature engineering and better learn to identify the explanatory factors of input data on their own\cite{bengio12}.
+Current machine learning algorithms' performance depend heavily on the particular features of the data chosen as inputs. For example, document classification (such as marking emails as spam or not) can be performed by breaking down the input document into bag-of-words or n-grams as features. Choosing the correct feature representation of input data, or feature engineering, is a way that people can bring prior knowledge of a domain to increase an algorithm's computational performance and accuracy. To move towards general artificial intelligence, algorithms need to be less dependent on this feature engineering and better learn to identify the explanatory factors of input data on their own \cite{bengio12}.
 
 \section{Representation Learning}
-Deep learning approaches (also known as deep architectures) move in this direction by capturing a good representation of input data by using compositions of non-linear transformations. A good representation can be defined as one that disentangles underlying factors of variation for input data\cite{bengio13}. Deep learning approaches can find useful abstract representations of data across many domains: it has had great commercial success powering most of Google and Microsoft's current speech recognition, image classification, natural language processing, object recognition, etc. Facebook is also planning on using deep learning approaches to understand its users\footnote{http://www.technologyreview.com/news/519411/facebook-launches-advanced-ai-effort-to-find-meaning-in-your-posts/}. Deep learning has been so impactful in industry that MIT Technology Review named it as a top-10 breakthrough technology of 2013\footnote{http://www.technologyreview.com/featuredstory/513696/deep-learning/}.
+Deep learning approaches (also known as deep architectures) move in this direction by capturing a good representation of input data by using compositions of non-linear transformations. A good representation can be defined as one that disentangles underlying factors of variation for input data \cite{bengio13}. Deep learning approaches can find useful abstract representations of data across many domains: it has had great commercial success powering most of Google and Microsoft's current speech recognition, image classification, natural language processing, object recognition, etc. Facebook is also planning on using deep learning approaches to understand its users\footnote{http://www.technologyreview.com/news/519411/facebook-launches-advanced-ai-effort-to-find-meaning-in-your-posts/}. Deep learning has been so impactful in industry that MIT Technology Review named it as a top-10 breakthrough technology of 2013\footnote{http://www.technologyreview.com/featuredstory/513696/deep-learning/}.
 
 The central idea to building a deep architecture is to learn a hierarchy of features one level at a time where the input to one computational level is the output of the previous level for an arbitrary number of levels. Otherwise, shallow representations (such as regression or support vector machines) go directly from input data to output classification.
 
@@ -103,14 +103,15 @@ One disadvantage of auto-encoders is that they can easily memorize the training 
 A practical advantage of auto-encoder variants is that they define a simple, tractable optimization objective that can be used to monitor progress.
 
 \section{Denoising Auto-encoders}
-Denoising auto-encoders [cite bengio denoising autoencoders as generative models here] are a class of direct encoding models that use synthetic noise over the inputs during training to prevent overfitting. The basic algorithm is as follows [convert this to code layout from bengio paper]:
-\begin{enumerate}
-\item Corrupt input \(X\) to \(~X\) through an arbitrary corruption process. X~ = C(X~|X)
-\item Encode corrupted input to hidden layer
-\item Decode hidden layer to original input, optimizing over reconstruction error.
-\end{enumerate}
+Denoising auto-encoders \cite{bengio13a, vincent08} are a class of direct encoding models that use synthetic noise over the inputs through a corruption process during training to prevent overfitting and simply learning the identity function. Given a known corruption process \(C(\widetilde{X}|X)\) to corrupt an observed variable \(X\), the denoising auto-encoder learns the reverse conditional \(P(X|\widetilde{X})\). Combining this estimator with the known corruption process \(C\), it can recover a consistent estimator of \(P(X)\) through a Markov chain that alternates sampling from \(C(\widetilde{X}|X)\) and \(P(X|\widetilde{X})\). The basic algorithm is as follows:
 
-Several interesting properties emerge due to the noise. You are more likely to find distributions that concentrate on the data manifold. You learn essentially a mixture of gaussian models. Summarize Bengio paper here.
-
-
+\begin{algorithm}[h!]
+	\KwIn{training set \(D\) of examples \(X\), a corruption process \(C(\widetilde{X}|X)\), and a conditional distribution \(P_\Theta(X|\widetilde{X})\) to train.}
+	\While{training not converged}{
+		sample training example \(X \sim D\)\;
+		sample corrupted input \(\widetilde{X} \sim C(\widetilde{X}|X)\)\;
+		use (\(X\),\(\widetilde{X}\)) as an additional training example towards minimizing the expected value of \(-\log P_\Theta (X|\widetilde{X})\), e.g., by a gradient step with respect to \(\Theta\) in the encoding/decoding function\;
+	}
+	\caption{ Generalized Denoising Auto-encoder Training Algorithm }
+\end{algorithm}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  16 JUL 2014 00:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  17 JUL 2014 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,18 +458,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -623,7 +623,7 @@ File: images/neural_net.png Graphic file (type png)
 
 <use images/neural_net.png>
 Package pdftex.def Info: images/neural_net.png used on input line 12.
-(pdftex.def)             Requested size: 291.78174pt x 191.72656pt.
+(pdftex.def)             Requested size: 250.10226pt x 164.33916pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -639,14 +639,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./images/neural_net.png>]
-<images/pca.png, id=48, 336.50719pt x 371.13657pt>
+<images/pca.png, id=49, 336.50719pt x 371.13657pt>
 File: images/pca.png Graphic file (type png)
  <use images/pca.png>
 Package pdftex.def Info: images/pca.png used on input line 28.
 (pdftex.def)             Requested size: 270.93883pt x 298.82376pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -654,7 +651,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] <images/boltzmann_machine.png, id=54, 434.62375pt x 412.54124pt>
+[5 <./images/pca.png>]
+<images/boltzmann_machine.png, id=55, 434.62375pt x 412.54124pt>
 File: images/boltzmann_machine.png Graphic file (type png)
 
 <use images/boltzmann_machine.png>
@@ -670,8 +668,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./images/pca.png>]
-<images/restricted_boltzmann.png, id=60, 250.6474pt x 266.52173pt>
+[6] <images/restricted_boltzmann.png, id=60, 250.6474pt x 266.52173pt>
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
@@ -723,34 +720,68 @@ LaTeX Warning: Citation `bengio13a' on page 10 undefined on input line 106.
 
 LaTeX Warning: Citation `vincent08' on page 10 undefined on input line 106.
 
-)
+
+LaTeX Warning: Citation `alain12' on page 10 undefined on input line 106.
+
+
+LaTeX Warning: Citation `alain12' on page 10 undefined on input line 118.
+
+
+LaTeX Warning: Citation `bengio13a' on page 10 undefined on input line 118.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./images/stacked_autoencoder.png>]
-Chapter 4.
-(./chapters/general_methodology.tex) [11
+[10 <./images/stacked_autoencoder.png>])
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Chapter 4.
+(./chapters/general_methodology.tex
+
+LaTeX Warning: Citation `bengio13a' on page 12 undefined on input line 5.
+
+[12
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
 Chapter 5.
-(./chapters/model1.tex) [12
+(./chapters/model1.tex) [14
 
 ]
 Chapter 6.
-(./chapters/model2.tex) [13
+(./chapters/model2.tex) [15
 
 ]
 Chapter 7.
-(./chapters/discussion.tex) [14
+(./chapters/model3.tex
+
+LaTeX Warning: Citation `lenet5' on page 16 undefined on input line 1.
+
+) [16
 
 ]
 Chapter 8.
-(./chapters/conclusion.tex) (./main.bbl [15
+(./chapters/discussion.tex) [17
 
-]) [16
+]
+Chapter 9.
+(./chapters/conclusion.tex) (./main.bbl [18
+
+]) [19
 
 ] (./main.aux)
 
@@ -758,29 +789,29 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5003 strings out of 495059
- 69393 string characters out of 3182031
+ 5008 strings out of 495059
+ 69456 string characters out of 3182031
  160281 words of memory out of 3000000
- 8070 multiletter control sequences out of 15000+200000
+ 8072 multiletter control sequences out of 15000+200000
  10274 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,11n,43p,1415b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-
-Output written on main.pdf (23 pages, 348516 bytes).
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (26 pages, 361211 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

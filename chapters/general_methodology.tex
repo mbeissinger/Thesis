@@ -1,5 +1,15 @@
-GSNs are basically a generalization of a denoising autoencoder.
-\section{Algorithm}
+Generative stochastic networks are a generalization of the denoising auto-encoder and help solve the problem of mixing between many modes as outlined in the Introduction. Each model presented in this thesis uses the GSN framework for learning a more useful abstraction of the input distribution \(P(X)\).
+
+\section{Generalizing denoising auto-encoders}
+
+Denoising auto-encoders use a Markov chain to learn a reconstruction distribution \(P(X|\widetilde{X})\) given a corruption process \(C(\widetilde{X}|X)\) for some data \(X\). Denoising auto-encoders have been shown as generative models \cite{bengio13a}, where the Markov chain can be iteratively sampled from:
+\begin{align*}
+ &X_t \sim P_\Theta(X|\widetilde{X}_{t-1})\\
+ &\widetilde{X}_t \sim C(\widetilde{X}|X_t)
+\end{align*}
+As long as the learned distribution \(P_{\Theta_n}(X|\widetilde{X})\) is a consistent estimator of the true conditional distribution \(P(X|\widetilde{X})\) and the Markov chain is ergodic, then as \(n \rightarrow \infty\), the asymptotic distribution \(\pi_n(X)\) of the generated samples from the denoising auto-encoder converges to the data-generating distribution \(P(X)\) (proof provided in Bengio et al. 2013).
+
+However, 
 
 \section{Analysis}
 

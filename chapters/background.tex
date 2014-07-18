@@ -9,7 +9,7 @@ One good analogue for deep architectures is neurons in the brain (a motivation f
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.7\textwidth]{neural_net}
+    \includegraphics[width=0.6\textwidth]{neural_net}
 \caption{An example deep architecture.}
 \end{figure}
 
@@ -103,7 +103,7 @@ One disadvantage of auto-encoders is that they can easily memorize the training 
 A practical advantage of auto-encoder variants is that they define a simple, tractable optimization objective that can be used to monitor progress.
 
 \section{Denoising Auto-encoders}
-Denoising auto-encoders \cite{bengio13a, vincent08} are a class of direct encoding models that use synthetic noise over the inputs through a corruption process during training to prevent overfitting and simply learning the identity function. Given a known corruption process \(C(\widetilde{X}|X)\) to corrupt an observed variable \(X\), the denoising auto-encoder learns the reverse conditional \(P(X|\widetilde{X})\). Combining this estimator with the known corruption process \(C\), it can recover a consistent estimator of \(P(X)\) through a Markov chain that alternates sampling from \(C(\widetilde{X}|X)\) and \(P(X|\widetilde{X})\). The basic algorithm is as follows:
+Denoising auto-encoders \cite{bengio13a, vincent08, alain12} are a class of direct encoding models that use synthetic noise over the inputs through a corruption process during training to prevent overfitting and simply learning the identity function. Given a known corruption process \(C(\widetilde{X}|X)\) to corrupt an observed variable \(X\), the denoising auto-encoder learns the reverse conditional \(P(X|\widetilde{X})\). Combining this estimator with the known corruption process \(C\), it can recover a consistent estimator of \(P(X)\) through a Markov chain that alternates sampling from \(C(\widetilde{X}|X)\) and \(P(X|\widetilde{X})\). The basic algorithm is as follows:
 
 \begin{algorithm}[h!]
 	\KwIn{training set \(D\) of examples \(X\), a corruption process \(C(\widetilde{X}|X)\), and a conditional distribution \(P_\Theta(X|\widetilde{X})\) to train.}
@@ -114,4 +114,9 @@ Denoising auto-encoders \cite{bengio13a, vincent08} are a class of direct encodi
 	}
 	\caption{ Generalized Denoising Auto-encoder Training Algorithm }
 \end{algorithm}
+
+The reconstruction distribution \(P(X|\widetilde{X})\) is easier to learn than the true data distribution \(P(X)\) because \(P(X|\widetilde{X})\) is often dominated by a single or few major modes, where the data distribution \(P(X)\) would be highly multimodal and complex. Recent works \cite{alain12, bengio13a} provide proofs that denoising auto-encoders with arbitrary variables (discrete, continuous, or both), an arbitrary corruption (Gaussian or other; not necessarily asymptotically small), and an arbitrary loss function (as long as it is viewed as a log-likelihood) estimate the score (derivative of the log-density with respect to the input) of the observed random variables.
+
+
+
 

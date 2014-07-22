@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  17 JUL 2014 21:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  22 JUL 2014 01:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -602,11 +602,72 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
-(./chapters/introduction.tex) [1
+(./chapters/introduction.tex
+
+LaTeX Warning: Citation `lenet5' on page 1 undefined on input line 1.
+
+
+LaTeX Warning: Citation `seide11' on page 1 undefined on input line 1.
+
+
+LaTeX Warning: Citation `krizhevsky12' on page 1 undefined on input line 1.
+
+
+LaTeX Warning: Citation `hinton06' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation `alain12' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation `ranzato07' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation `gsn' on page 1 undefined on input line 3.
+
+[1
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
 Chapter 2.
-(./chapters/related_work.tex) [2
+(./chapters/related_work.tex
+
+LaTeX Warning: Citation `sutskever06' on page 3 undefined on input line 3.
+
+
+LaTeX Warning: Citation `sutskever08' on page 3 undefined on input line 6.
+
+
+LaTeX Warning: Citation `lockett09' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Citation `lewandowski12' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Citation `andrew12' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation `andrew13' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation `socher11' on page 3 undefined on input line 18.
+
+
+LaTeX Warning: Citation `wang13' on page 3 undefined on input line 20.
+
+) [3
 
 ]
 Chapter 3.
@@ -616,21 +677,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 es-advanced-ai-effort-to-
  []
 
-[3
+[4
 
-] <images/neural_net.png, id=41, 488.82625pt x 321.2pt>
+] <images/neural_net.png, id=45, 488.82625pt x 321.2pt>
 File: images/neural_net.png Graphic file (type png)
 
 <use images/neural_net.png>
 Package pdftex.def Info: images/neural_net.png used on input line 12.
 (pdftex.def)             Requested size: 250.10226pt x 164.33916pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -638,8 +692,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4 <./images/neural_net.png>]
-<images/pca.png, id=49, 336.50719pt x 371.13657pt>
+[5 <./images/neural_net.png>]
+<images/pca.png, id=52, 336.50719pt x 371.13657pt>
 File: images/pca.png Graphic file (type png)
  <use images/pca.png>
 Package pdftex.def Info: images/pca.png used on input line 28.
@@ -651,58 +705,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5 <./images/pca.png>]
-<images/boltzmann_machine.png, id=55, 434.62375pt x 412.54124pt>
-File: images/boltzmann_machine.png Graphic file (type png)
-
-<use images/boltzmann_machine.png>
-Package pdftex.def Info: images/boltzmann_machine.png used on input line 46.
-(pdftex.def)             Requested size: 187.57352pt x 178.04395pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[6 <./images/pca.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <images/restricted_boltzmann.png, id=60, 250.6474pt x 266.52173pt>
+[7] <images/restricted_boltzmann.png, id=62, 250.6474pt x 266.52173pt>
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
-Package pdftex.def Info: images/restricted_boltzmann.png used on input line 60.
+Package pdftex.def Info: images/restricted_boltzmann.png used on input line 54.
 
 (pdftex.def)             Requested size: 187.57352pt x 199.45564pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7 <./images/boltzmann_machine.png (PNG copy)> <./images/restricted_boltzmann.p
-ng>] <images/stacked_rbm.jpg, id=65, 213.79875pt x 300.12125pt>
+<images/stacked_rbm.jpg, id=63, 213.79875pt x 300.12125pt>
 File: images/stacked_rbm.jpg Graphic file (type jpg)
 
 <use images/stacked_rbm.jpg>
-Package pdftex.def Info: images/stacked_rbm.jpg used on input line 72.
+Package pdftex.def Info: images/stacked_rbm.jpg used on input line 66.
 (pdftex.def)             Requested size: 125.05113pt x 175.54045pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8 <./images/stacked_rbm.jpg>]
-<images/stacked_autoencoder.png, id=70, 574.39594pt x 176.91093pt>
-File: images/stacked_autoencoder.png Graphic file (type png)
-
-<use images/stacked_autoencoder.png>
-Package pdftex.def Info: images/stacked_autoencoder.png used on input line 97.
-(pdftex.def)             Requested size: 333.46758pt x 102.70828pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -713,21 +736,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[8 <./images/restricted_boltzmann.png>]
 
-LaTeX Warning: Citation `bengio13a' on page 10 undefined on input line 106.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./images/stacked_rbm.jpg>]
+<images/stacked_autoencoder.png, id=72, 574.39594pt x 176.91093pt>
+File: images/stacked_autoencoder.png Graphic file (type png)
+
+<use images/stacked_autoencoder.png>
+Package pdftex.def Info: images/stacked_autoencoder.png used on input line 91.
+(pdftex.def)             Requested size: 333.46758pt x 102.70828pt.
 
 
-LaTeX Warning: Citation `vincent08' on page 10 undefined on input line 106.
+LaTeX Warning: Citation `bengio13a' on page 10 undefined on input line 100.
 
 
-LaTeX Warning: Citation `alain12' on page 10 undefined on input line 106.
+LaTeX Warning: Citation `vincent08' on page 10 undefined on input line 100.
 
 
-LaTeX Warning: Citation `alain12' on page 10 undefined on input line 118.
-
-
-LaTeX Warning: Citation `bengio13a' on page 10 undefined on input line 118.
+LaTeX Warning: Citation `alain12' on page 10 undefined on input line 100.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -735,53 +766,121 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./images/stacked_autoencoder.png>])
+[10 <./images/stacked_autoencoder.png>]
+
+LaTeX Warning: Citation `alain12' on page 11 undefined on input line 112.
+
+
+LaTeX Warning: Citation `bengio13a' on page 11 undefined on input line 112.
+
+
+LaTeX Warning: Citation `bengio13a' on page 11 undefined on input line 114.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[11])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 Chapter 4.
 (./chapters/general_methodology.tex
 
-LaTeX Warning: Citation `bengio13a' on page 12 undefined on input line 5.
+LaTeX Warning: Citation `bengio13a' on page 13 undefined on input line 7.
 
-[12
 
-])
+LaTeX Warning: Citation `bengio13a' on page 13 undefined on input line 13.
+
+[13
+
+]
+
+LaTeX Warning: Citation `gsn' on page 14 undefined on input line 20.
+
+
+LaTeX Warning: Citation `gsn' on page 14 undefined on input line 27.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14] <images/gsn_computational_graph.png, id=91, 350.05782pt x 100.12407pt>
+File: images/gsn_computational_graph.png Graphic file (type png)
+
+<use images/gsn_computational_graph.png>
+Package pdftex.def Info: images/gsn_computational_graph.png used on input line 
+36.
+(pdftex.def)             Requested size: 250.10226pt x 71.53621pt.
+
+Overfull \hbox (8.8535pt too wide) in paragraph at lines 39--40
+[]\OT1/cmr/m/n/12 The la-tent state vari-able $\OML/cmm/m/it/12 H$ \OT1/cmr/m/n
+/12 can be equiv-a-lently de-fined as $\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = \
+OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]; Z[]; H[]\OT1/cmr/m/n/
+12 )$,
+ []
+
+
+LaTeX Warning: Citation `rezende14' on page 15 undefined on input line 41.
+
+<images/gsn_markov_chain.png, id=92, 548.0475pt x 161.85469pt>
+File: images/gsn_markov_chain.png Graphic file (type png)
+
+<use images/gsn_markov_chain.png>
+Package pdftex.def Info: images/gsn_markov_chain.png used on input line 45.
+(pdftex.def)             Requested size: 333.46758pt x 98.48424pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./images/gsn_computational_graph.png> <./images/gsn_markov_chain.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
 Chapter 5.
-(./chapters/model1.tex) [14
+(./chapters/model1.tex) [17
 
 ]
 Chapter 6.
-(./chapters/model2.tex) [15
+(./chapters/model2.tex
+Overfull \hbox (28.24483pt too wide) in paragraph at lines 7--7
+[]\OT1/cmr/bx/n/17.28 Extending the walk-back pro-ce-dure to se-quenced
+ []
+
+) [18
 
 ]
 Chapter 7.
 (./chapters/model3.tex
 
-LaTeX Warning: Citation `lenet5' on page 16 undefined on input line 1.
+LaTeX Warning: Citation `lenet5' on page 19 undefined on input line 1.
 
-) [16
+) [19
 
 ]
 Chapter 8.
-(./chapters/discussion.tex) [17
+(./chapters/discussion.tex) [20
 
 ]
 Chapter 9.
-(./chapters/conclusion.tex) (./main.bbl [18
+(./chapters/conclusion.tex) (./main.bbl [21
 
-]) [19
+]) [22
 
 ] (./main.aux)
 
@@ -789,13 +888,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5008 strings out of 495059
- 69456 string characters out of 3182031
- 160281 words of memory out of 3000000
- 8072 multiletter control sequences out of 15000+200000
+ 5027 strings out of 495059
+ 69783 string characters out of 3182031
+ 162281 words of memory out of 3000000
+ 8090 multiletter control sequences out of 15000+200000
  10274 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,11n,43p,1415b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,43p,1692b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -804,14 +903,15 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (26 pages, 361211 bytes).
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (29 pages, 413312 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 165 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

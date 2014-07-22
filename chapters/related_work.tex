@@ -1,0 +1,20 @@
+Due to the success of deep architectures on highly complex input data, applying deep architectures to sequence prediction tasks has been studied extensively in literature. RBM variants have been the most popular for applying deep learning models to sequential data.
+
+\emph{Temporal RBM (TRBM} \cite{sutskever06} is a framework
+
+
+\emph{Recurrent Temporal RBMs (RTRBMs)} \cite{sutskever08} are an extension of the TRBM.
+
+
+\emph{Temporal Convolution Machines (TCMs)} \cite{lockett09} also build from TRBMs.
+
+
+\emph{RNN-RBM} \cite{lewandowski12} is similar to the RTRBM.
+
+
+\emph{Sequential Deep Belief Networks (SDBNs)} \cite{andrew12, andrew13}
+
+
+\emph{Recursive Neural Networks (RNNs)} \cite{socher11} are a slightly different framework used for sequence labeling in parsing sentences or image scenes.
+
+Past work has also compared a deep architecture, Sentence-level Likelihood Neural Nets (SLNN), with traditional Conditional Random Fields (CRF) for sequence labeling tasks of Named Entity Recognition and Syntactic chunking \cite{wang13}. Wang et al. found that non-linear deep architectures are more effective in low dimensional continuous input spaces, but are not more effective in high-dimensinoal discrete input spaces compared to linear CRFs. They also confirm that distributional representations can be used to achieve better generalization.

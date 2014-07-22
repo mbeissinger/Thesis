@@ -1,5 +1,7 @@
 Generative stochastic networks are a generalization of the denoising auto-encoder and help solve the problem of mixing between many modes as outlined in the Introduction. Each model presented in this thesis uses the GSN framework for learning a more useful abstraction of the input distribution \(P(X)\).
 
+
+
 \section{Generalizing denoising auto-encoders}
 
 Denoising auto-encoders use a Markov chain to learn a reconstruction distribution \(P(X|\widetilde{X})\) given a corruption process \(C(\widetilde{X}|X)\) for some data \(X\). Denoising auto-encoders have been shown as generative models \cite{bengio13a}, where the Markov chain can be iteratively sampled from:
@@ -7,10 +9,49 @@ Denoising auto-encoders use a Markov chain to learn a reconstruction distributio
  &X_t \sim P_\Theta(X|\widetilde{X}_{t-1})\\
  &\widetilde{X}_t \sim C(\widetilde{X}|X_t)
 \end{align*}
-As long as the learned distribution \(P_{\Theta_n}(X|\widetilde{X})\) is a consistent estimator of the true conditional distribution \(P(X|\widetilde{X})\) and the Markov chain is ergodic, then as \(n \rightarrow \infty\), the asymptotic distribution \(\pi_n(X)\) of the generated samples from the denoising auto-encoder converges to the data-generating distribution \(P(X)\) (proof provided in Bengio et al. 2013).
 
-However, 
+As long as the learned distribution \(P_{\Theta_n}(X|\widetilde{X})\) is a consistent estimator of the true conditional distribution \(P(X|\widetilde{X})\) and the Markov chain is ergodic, then as \(n \rightarrow \infty\), the asymptotic distribution \(\pi_n(X)\) of the generated samples from the denoising auto-encoder converges to the data-generating distribution \(P(X)\) (proof provided in Bengio et al. \cite{bengio13a}). 
 
-\section{Analysis}
+
+\subsection{Easing restrictive conditions on the denoising auto-encoder}
+
+A few restrictive conditions are necessary to guarantee ergocity of the Markov chain - requiring \(C(\widetilde{X}|X) > 0\) everywhere that \(P(X) > 0\). Particularly, a large region \(V\) containing any possible \(X\) is defined such that the probability of moving between any two points in a single jump \(C(\widetilde{X}|X)\) must be greater than 0. This restriction requires that \(P_{\Theta_n}(X|\widetilde{X})\) has the ability to model every mode of \(P(X)\), which is a problem this model was meant to avoid.
+
+To ease this restriction, Bengio et al. \cite{gsn} proves that using a \(C(\widetilde{X}|X)\) that only makes small jumps allows \(P_{\Theta}(X|\widetilde{X})\) to model a small part of the space \(V\) around each \(\widetilde{X}\). This weaker condition means that modeling the reconstruction distribution \(P(X|\widetilde{X})\) would be easier since it would probably have fewer modes. 
+
+However, the jump size \(\sigma\) between points must still be large enough to guarantee that one can jump often enough between the major modes of \(P(X)\) to overcome the deserts of low probability: \(\sigma\) must be larger than half the largest distance of low probability between two nearby modes, such that \(V\) has at least a single connected component between modes. This presents a tradeoff between the difficulty of learning \(P_{\Theta}(X|\widetilde{X})\) and the ease of mixing between modes seperated by this low probability desert.
+
+
+\subsection{Generalizing to GSN}
+
+While denoising auto-encoders can rely on \(X_t\) alone for the state of the Markov chain, GSNs introduce a latent variable \(H_t\) that acts as an additional state variable in the Markov chain along with the visible \(X_t\) \cite{gsn}:
+\begin{align*}
+ &H_{t+1} \sim P_{\Theta_1}(H|H_t, X_t)\\
+ &X_{t+1} \sim  P_{\Theta_2}(X|H_{t+1})
+\end{align*}
+The resulting computational graph takes the form:
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.6\textwidth]{gsn_computational_graph}
+\caption{GSN computational graph.}
+\end{figure}
+The latent state variable \(H\) can be equivalently defined as \(H_{t+1} = f_{\Theta_1}(X_t,Z_t,H_t)\), a learned function \(f\) with an independent noise source \(Z_t\) such that \(X_t\) cannot be reconstructed exactly from \(H_{t+1}\). If \(X_t\) could be recovered from \(H_{t+1}\), the reconstruction distribution would simply converge to the dirac at \(X\). Denoising auto-encoders are therefore a special case of GSNs, where \(f\) is fixed instead of learned.
+
+GSNs also use the notion of walkback to aid training. The resulting Markov chain of a GSN is inspired by Gibbs sampling, but with stochastic units at each layer that can be backpropagated \cite{rezende14}.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{gsn_markov_chain}
+\caption{Unrolled GSN Markov chain.}
+\end{figure}
+
+
 
 \section{Extension to recurrent deep GSN}
+
+Mixing problem: depth to the rescue. MCMC sampling from the top layer model. Deeper nets visit more modes faster. Deeper representations lead to better abstractions lead to disentangling. More abstract/disentangled representations unfold manifolds and fill more space -> can be exploited for better mixing between modes.
+
+
+
+

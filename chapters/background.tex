@@ -1,7 +1,7 @@
 Current machine learning algorithms' performance depend heavily on the particular features of the data chosen as inputs. For example, document classification (such as marking emails as spam or not) can be performed by breaking down the input document into bag-of-words or n-grams as features. Choosing the correct feature representation of input data, or feature engineering, is a way that people can bring prior knowledge of a domain to increase an algorithm's computational performance and accuracy. To move towards general artificial intelligence, algorithms need to be less dependent on this feature engineering and better learn to identify the explanatory factors of input data on their own \cite{bengio12}.
 
 \section{Representation Learning}
-Deep learning approaches (also known as deep architectures) move in this direction by capturing a good representation of input data by using compositions of non-linear transformations. A good representation can be defined as one that disentangles underlying factors of variation for input data \cite{bengio13}. Deep learning approaches can find useful abstract representations of data across many domains: it has had great commercial success powering most of Google and Microsoft's current speech recognition, image classification, natural language processing, object recognition, etc. Facebook is also planning on using deep learning approaches to understand its users\footnote{http://www.technologyreview.com/news/519411/facebook-launches-advanced-ai-effort-to-find-meaning-in-your-posts/}. Deep learning has been so impactful in industry that MIT Technology Review named it as a top-10 breakthrough technology of 2013\footnote{http://www.technologyreview.com/featuredstory/513696/deep-learning/}.
+Deep learning frameworks (also known as deep architectures) move in this direction by capturing a good representation of input data by using compositions of non-linear transformations. A good representation can be defined as one that disentangles underlying factors of variation for input data \cite{bengio13}. Deep learning frameworks can find useful abstract representations of data across many domains: it has had great commercial success powering most of Google and Microsoft's current speech recognition, image classification, natural language processing, object recognition, etc. Facebook is also planning on using deep learning to understand its users\footnote{http://www.technologyreview.com/news/519411/facebook-launches-advanced-ai-effort-to-find-meaning-in-your-posts/}. Deep learning has been so impactful in industry that MIT Technology Review named it as a top-10 breakthrough technology of 2013\footnote{http://www.technologyreview.com/featuredstory/513696/deep-learning/}.
 
 The central idea to building a deep architecture is to learn a hierarchy of features one level at a time where the input to one computational level is the output of the previous level for an arbitrary number of levels. Otherwise, shallow representations (such as regression or support vector machines) go directly from input data to output classification.
 
@@ -40,12 +40,6 @@ A Boltzmann machine is a network of symmetrically-coupled binary random variable
 \item The visible binary units \(x\) that make up the input data and
 \item The hidden or latent binary units \(h\) that explain away the dependencies between the visible units \(x\) through their mutual interactions.
 \end{enumerate}
-
-\begin{figure}[h!]
-  \centering
-    \includegraphics[width=0.45\textwidth]{boltzmann_machine}
-\caption{A graphical representation of a Boltzmann machine. Each undirected edge represents dependency; in this example there are 3 hidden units and 4 visible units.}
-\end{figure}
 
 Boltzmann machines describe this pattern of interaction through the distribution over the joint space \([x,h]\) with the energy function: 
 \[\varepsilon_\Theta^{BM} (x,h) = -\frac{1}{2} x^T Ux - \frac{1}{2} h^T Vh - x^T Wh - b^T x - d^T h\]
@@ -116,6 +110,24 @@ Denoising auto-encoders \cite{bengio13a, vincent08, alain12} are a class of dire
 \end{algorithm}
 
 The reconstruction distribution \(P(X|\widetilde{X})\) is easier to learn than the true data distribution \(P(X)\) because \(P(X|\widetilde{X})\) is often dominated by a single or few major modes, where the data distribution \(P(X)\) would be highly multimodal and complex. Recent works \cite{alain12, bengio13a} provide proofs that denoising auto-encoders with arbitrary variables (discrete, continuous, or both), an arbitrary corruption (Gaussian or other; not necessarily asymptotically small), and an arbitrary loss function (as long as it is viewed as a log-likelihood) estimate the score (derivative of the log-density with respect to the input) of the observed random variables.
+
+Another key idea presented in Bengio et al. \cite{bengio13a} is walkback training. The walkback process generates additional training examples through a pseudo-Gibbs sampling process from the current denoising auto-encoder Markov chain for a certain number of steps. These additional generated \((X,\widetilde{X})\) pairs from the model decrease training time by actively correcting spurious modes (regions of the input data that have been insufficiently visited during training, which may therefore be incorrect in the learned reconstruction distribution). Both increasing the number of training iterations and increasing corruption noise alleviate spurious modes, but walkbacks are the most effective.
+\begin{algorithm}[h!]
+	\KwIn{A given training example \(X\), a corruption process \(C(\widetilde{X}|X)\), and the current model's reconstruction conditional distribution \(P_\Theta(X|\widetilde{X})\). It also has a hyper-parameter \(p\) that controls the number of generated samples.}
+	\KwOut{A list \(L\) of additional training examples \(\widetilde{X}^*\).}
+	\(X^* \leftarrow X\), \(L \leftarrow []\)\;
+	Sample \(\widetilde{X}^* \sim C(\widetilde{X}|X^*)\)\;
+	Sample \(u \sim\) Uniform\((0,1)\)\;
+	\While{\(u < p\)}{
+		Append \(\widetilde{X}^*\) to \(L\), so \((X,\widetilde{X}^*)\) will be an additional training example for the denoising auto-encoder.\;
+		Sample \(X^* \sim P_\Theta(X|\widetilde{X}^*)\)\;
+		Sample \(\widetilde{X}^* \sim C(\widetilde{X}|X^*)\)\;
+		Sample \(u \sim\) Uniform\((0,1)\)\;
+	}
+	Append \(\widetilde{X}^*\) to \(L\)\;
+	Return \(L\)\;
+	\caption{ Walkback Training Algorithm for Denoising Auto-encoders }
+\end{algorithm}
 
 
 

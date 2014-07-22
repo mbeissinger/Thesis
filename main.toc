@@ -1,26 +1,28 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Related Work}{2}
-\contentsline {chapter}{\numberline {3}Background}{3}
-\contentsline {section}{\numberline {3.1}Representation Learning}{3}
-\contentsline {section}{\numberline {3.2}Interpretations of Deep Architectures}{4}
-\contentsline {subsection}{\numberline {3.2.1}Probabilistic models: restricted boltzmann machine (RBM)}{6}
+\contentsline {chapter}{\numberline {2}Related Work}{3}
+\contentsline {chapter}{\numberline {3}Background: Deep Architectures}{4}
+\contentsline {section}{\numberline {3.1}Representation Learning}{4}
+\contentsline {section}{\numberline {3.2}Interpretations of Deep Architectures}{5}
+\contentsline {subsection}{\numberline {3.2.1}Probabilistic models: restricted boltzmann machine (RBM)}{7}
 \contentsline {subsection}{\numberline {3.2.2}Direct encoding models: auto-encoder}{9}
-\contentsline {section}{\numberline {3.3}Denoising Auto-encoders}{10}
-\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks (GSN)}{12}
-\contentsline {section}{\numberline {4.1}Generalizing denoising auto-encoders}{12}
-\contentsline {section}{\numberline {4.2}Analysis}{13}
-\contentsline {section}{\numberline {4.3}Extension to recurrent deep GSN}{13}
-\contentsline {chapter}{\numberline {5}Model 1: Expectation Maximization method for training a recurrent deep GSN}{14}
-\contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{14}
-\contentsline {section}{\numberline {5.2}Algorithm}{14}
-\contentsline {section}{\numberline {5.3}Experimental results}{14}
-\contentsline {chapter}{\numberline {6}Model 2: Online method for training a recurrent deep GSN}{15}
-\contentsline {section}{\numberline {6.1}Using real data sequence to train deep GSN}{15}
-\contentsline {section}{\numberline {6.2}Algorithm}{15}
-\contentsline {section}{\numberline {6.3}Analysis}{15}
-\contentsline {chapter}{\numberline {7}Model 3: Hybrid method for training a recurrent deep GSN}{16}
-\contentsline {subsection}{\numberline {7.0.1}Generalizing the EM model}{16}
-\contentsline {subsection}{\numberline {7.0.2}Algorithm}{16}
-\contentsline {subsection}{\numberline {7.0.3}Experimental results}{16}
-\contentsline {chapter}{\numberline {8}Discussion}{17}
-\contentsline {chapter}{\numberline {9}Conclusion}{18}
+\contentsline {section}{\numberline {3.3}Denoising Auto-encoders}{11}
+\contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks (GSN)}{13}
+\contentsline {section}{\numberline {4.1}Generalizing denoising auto-encoders}{13}
+\contentsline {subsection}{\numberline {4.1.1}Easing restrictive conditions on the denoising auto-encoder}{14}
+\contentsline {subsection}{\numberline {4.1.2}Generalizing to GSN}{14}
+\contentsline {section}{\numberline {4.2}Extension to recurrent deep GSN}{16}
+\contentsline {chapter}{\numberline {5}Model 1: Expectation Maximization method for training a recurrent deep GSN}{17}
+\contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{17}
+\contentsline {section}{\numberline {5.2}Algorithm}{17}
+\contentsline {section}{\numberline {5.3}Experimental results}{17}
+\contentsline {chapter}{\numberline {6}Model 2: Online method for training a recurrent deep GSN}{18}
+\contentsline {section}{\numberline {6.1}Using real data sequence to train deep GSN}{18}
+\contentsline {section}{\numberline {6.2}Algorithm}{18}
+\contentsline {section}{\numberline {6.3}Extending the walkback procedure to sequenced inputs}{18}
+\contentsline {section}{\numberline {6.4}Analysis}{18}
+\contentsline {chapter}{\numberline {7}Model 3: Hybrid method for training a recurrent deep GSN}{19}
+\contentsline {section}{\numberline {7.1}Generalizing the EM model}{19}
+\contentsline {section}{\numberline {7.2}Algorithm}{19}
+\contentsline {section}{\numberline {7.3}Experimental results}{19}
+\contentsline {chapter}{\numberline {8}Discussion}{20}
+\contentsline {chapter}{\numberline {9}Conclusion}{21}

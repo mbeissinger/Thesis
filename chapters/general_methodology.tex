@@ -50,8 +50,16 @@ GSNs also use the notion of walkback to aid training. The resulting Markov chain
 
 \section{Extension to recurrent deep GSN}
 
-Mixing problem: depth to the rescue. MCMC sampling from the top layer model. Deeper nets visit more modes faster. Deeper representations lead to better abstractions lead to disentangling. More abstract/disentangled representations unfold manifolds and fill more space -> can be exploited for better mixing between modes.
+Similar to RBMs, sequences of GSNs can be learned by a recurrent step in the parameters or latent states over the sequence of input variables. The main reason this approach works is because deep architectures help solve the multi-modal problem of complex input data explained in the Introduction and can easily mix between many modes.
 
+The main mixing problem comes from the complicated data manifold surfaces of the input space; transitioning from one MNIST digit to the next in the input space generally looks like a messy blend of the two numbers in the intermediate steps. As more layers are learned, more abstract features lead to better disentangling of the input data, which ends up unfolding the manifolds to fill a larger part of the representation space. Because these manifolds become closer together, Markov Chain Monte Carlo (MCMC) sampling between them moves between the modes of the input data easier and creates a much better mixing between the modes.
 
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=1.0\textwidth]{mixing_problem}
+\caption{Better mixing via deep architectures \cite{bengio_workshop}.}
+\end{figure}
+
+Because the data manifold space becomes less complicated at higher levels of abstraction, transitioning between them over time becomes much easier. This principle enables the models in the following three chapters to learn sequences of complex input data over time.
 
 

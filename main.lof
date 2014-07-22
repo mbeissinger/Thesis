@@ -1,14 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An example deep architecture.}}{5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Principal component analysis.}}{6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces A Restricted Boltzmann machine.}}{8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Stacked RBM.}}{9}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Stacked auto-encoder.}}{10}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example deep architecture.}}{7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Principal component analysis.}}{8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A Restricted Boltzmann machine.}}{10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Stacked RBM.}}{11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Stacked auto-encoder.}}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces GSN computational graph.}}{15}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Unrolled GSN Markov chain.}}{15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces GSN computational graph.}}{17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Unrolled GSN Markov chain.}}{17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Better mixing via deep architectures \cite {bengio_workshop}.}}{18}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

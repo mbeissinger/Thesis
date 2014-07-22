@@ -17,6 +17,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[R]{\thepage}
 
+\makeatletter
+\def\hlinewd#1{%
+  \noalign{\ifnum0=`}\fi\hrule \@height #1 \futurelet
+   \reserved@a\@xhline}
+\makeatother
+
 
 \begin{document}
 	\doublespacing
@@ -57,8 +63,8 @@
 	\input{chapters/abstract}
 	
 	\tableofcontents
-	\listoftables
 	\listoffigures
+	\listoftables
 	
 	\chapter{Introduction}
 	\pagenumbering{arabic}

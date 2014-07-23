@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{alain12}
+Guillaume Alain, Yoshua Bengio, and Salah Rifai.
+\newblock Regularized auto-encoders estimate local statistics.
+\newblock {\em CoRR}, abs/1211.4246, 2012.
+
+\bibitem{andrew12}
+Galen Andrew and Jeff Bilmes.
+\newblock Sequential deep belief networks.
+\newblock In {\em 2012 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, 2012.
+
+\bibitem{andrew13}
+Galen Andrew and Jeff Bilmes.
+\newblock Backpropagation in sequential deep neural networks.
+\newblock In {\em NIPS Deep Learning Workshop}, 2013.
+
+\bibitem{bach05}
+Francis~R. Bach and Michael~I. Jordan.
+\newblock A probabilistic interpretation of canonical correlation analysis.
+\newblock Technical Report 688, University of California, Berkeley, April 2005.
+
+\bibitem{bengio13}
+Yoshua Bengio.
+\newblock Deep learning of representations: Looking forward.
+\newblock {\em CoRR}, abs/1305.0445, 2013.
+
+\bibitem{bengio_workshop}
+Yoshua Bengio.
+\newblock Invited tutorial: Deep learning of representations.
+\newblock In {\em Proceedings of the 27th Canadian Conference on Artificial
+  Intelligence}, 2014.
+
+\bibitem{bengio12}
+Yoshua Bengio, Aaron~C. Courville, and Pascal Vincent.
+\newblock Unsupervised feature learning and deep learning: A review and new
+  perspectives.
+\newblock {\em CoRR}, abs/1206.5538, 2012.
+
+\bibitem{gsn}
+Yoshua Bengio, Eric Thibodeau-Laufer, and Jason Yosinski.
+\newblock Deep generative stochastic networks trainable by backprop.
+\newblock {\em CoRR}, abs/1306.1091, 2013.
+
+\bibitem{bengio13a}
+Yoshua Bengio, Li~Yao, Guillaume Alain, and Pascal Vincent.
+\newblock Generalized denoising auto-encoders as generative models.
+\newblock {\em CoRR}, abs/1305.6663, 2013.
+
+\bibitem{lewandowski12}
+Nicolas Boulanger-Lewandowski, Yoshua Bengio, and Pascal Vincent.
+\newblock Modeling temporal dependencies in high-dimensional sequences:
+  Application to polyphonic music generation and transcription.
+\newblock In {\em Proceedings of the 29th International Conference on Machine
+  Learning (ICML 2012)}, 2012.
+
+\bibitem{hinton06}
+Geoffrey~E. Hinton, Simon Osindero, and Yee-Whye Teh.
+\newblock A fast learning algorithm for deep belief nets.
+\newblock {\em Neural Computation}, 18(7):1527--1554, July 2006.
+
+\bibitem{krizhevsky12}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em NIPS 2012: Neural Information Processing Systems}, 2012.
+
+\bibitem{lenet5}
+Yann LeCun, Leon Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock In {\em Intelligent Signal Processing}, pages 306--351. IEEE Press,
+  2001.
+
+\bibitem{lockett09}
+Alan~J Lockett and Risto Miikkulainen.
+\newblock Temporal convolution machines for sequence learning.
+\newblock Technical Report AI-09-04, Department of Computer Sciences, the
+  University of Texas at Austin, 2009.
+
+\bibitem{ranzato07}
+Marc'Aurelio Ranzato and Yann LeCun.
+\newblock A sparse and locally shift invariant feature extractor applied to
+  document images.
+\newblock In {\em International Conference on Document Analysis and Recognition
+  (ICDAR 2007)}, 2007.
+
+\bibitem{rezende14}
+Danilo~J. Rezende, Shakir Mohamed, and Daan Wierstra.
+\newblock Stochastic backpropagation and approximate inference in deep
+  generateive models.
+\newblock In {\em Proceedings of the 31st International Conference on Machine
+  Learning}, 2014.
+
+\bibitem{seide11}
+Frank Seide, Gang Li, and Dong Yu.
+\newblock Conversational speech transcription using context-dependent deep
+  neural networks.
+\newblock In {\em Interspeech 2011}. International Speech Communication
+  Association, August 2011.
+
+\bibitem{socher11}
+Richard Socher, Cliff~C. Lin, Andrew~Y. Ng, and Christopher~D. Manning.
+\newblock Parsing natural scenes and natural language with recursive neural
+  networks.
+\newblock In {\em Proceedings of the 26th International Conference on Machine
+  Learning (ICML)}, 2011.
+
+\bibitem{sutskever06}
+Ilya Sutskever and Geoffrey Hinton.
+\newblock Learning multilevel distributed representations for high-dimensional
+  sequences.
+\newblock Technical report, University of Toronto, 2006.
+
+\bibitem{sutskever08}
+Ilya Sutskever, Geoffrey Hinton, and Graham Taylor.
+\newblock The recurrent temporal restricted boltzmann machine.
+\newblock In {\em Advances in Neural Information Processing Systems 21 (NIPS
+  2008)}, 2008.
+
+\bibitem{vincent08}
+Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol.
+\newblock Extracting and composing robust features with denoising autoencoders.
+\newblock In {\em Proceedings of the 25th International Conference on Machine
+  Learning}, 2008.
+
+\bibitem{wang13}
+Mengqiu Wang and Christopher~D. Manning.
+\newblock Effect of non-linear deep architecture in sequence labeling.
+\newblock In {\em Proceedings of the 6th International Joint Conference on
+  Natural Language Processing (IJCNLP)}, 2013.
+
+\end{thebibliography}

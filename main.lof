@@ -11,8 +11,14 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Unrolled GSN Markov chain.}}{17}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Better mixing via deep architectures \cite {bengio_workshop}.}}{18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Samples from GSN after 300 training epochs. Good mixing between major modes in the input space.}}{21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}}{21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Average MNIST training data by digit.}}{23}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Model 1 sampling after 90 training iterations.}}{24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{33}
 \addvspace {10\p@ }

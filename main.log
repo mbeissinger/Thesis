@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  22 JUL 2014 18:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.8)  23 JUL 2014 05:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -569,13 +569,20 @@ e
 ]
 (./chapters/abstract.tex) [2
 
-] (./main.toc
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] (./main.toc
 Overfull \hbox (18.75586pt too wide) in paragraph at lines 9--9
  [] []\OT1/cmr/bx/n/12 General Method-ol-ogy: Deep Gen-er-a-tive Stochas-tic Ne
 t-works (GSN) []  
  []
 
-[3
+[4
 
 ])
 \tf@toc=\write3
@@ -588,22 +595,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./main.lof
+[5] (./main.lof
 
-LaTeX Warning: Citation `bengio_workshop' on page v undefined on input line 12.
-
+LaTeX Warning: Citation `bengio_workshop' on page vi undefined on input line 12
+.
 
 )
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
- [5
+ [6
 
 ] (./main.lot)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [6
+ [7
 
 ]
 Chapter 1.
@@ -706,7 +713,7 @@ es-advanced-ai-effort-to-
 
 [6
 
-] <images/neural_net.png, id=53, 488.82625pt x 321.2pt>
+] <images/neural_net.png, id=56, 488.82625pt x 321.2pt>
 File: images/neural_net.png Graphic file (type png)
 
 <use images/neural_net.png>
@@ -720,7 +727,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <./images/neural_net.png>]
-<images/pca.png, id=60, 336.50719pt x 371.13657pt>
+<images/pca.png, id=63, 336.50719pt x 371.13657pt>
 File: images/pca.png Graphic file (type png)
  <use images/pca.png>
 Package pdftex.def Info: images/pca.png used on input line 28.
@@ -742,7 +749,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <images/restricted_boltzmann.png, id=69, 250.6474pt x 266.52173pt>
+[9] <images/restricted_boltzmann.png, id=72, 250.6474pt x 266.52173pt>
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
@@ -750,12 +757,12 @@ Package pdftex.def Info: images/restricted_boltzmann.png used on input line 54.
 
 (pdftex.def)             Requested size: 187.57352pt x 199.45564pt.
 
-<images/stacked_rbm.jpg, id=70, 213.79875pt x 300.12125pt>
+<images/stacked_rbm.jpg, id=73, 213.79875pt x 300.12125pt>
 File: images/stacked_rbm.jpg Graphic file (type jpg)
 
 <use images/stacked_rbm.jpg>
 Package pdftex.def Info: images/stacked_rbm.jpg used on input line 66.
-(pdftex.def)             Requested size: 125.05113pt x 175.54045pt.
+(pdftex.def)             Requested size: 83.3653pt x 117.02391pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -774,7 +781,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./images/stacked_rbm.jpg>]
-<images/stacked_autoencoder.png, id=79, 574.39594pt x 176.91093pt>
+<images/stacked_autoencoder.png, id=83, 574.39594pt x 176.91093pt>
 File: images/stacked_autoencoder.png Graphic file (type png)
 
 <use images/stacked_autoencoder.png>
@@ -843,7 +850,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <images/gsn_computational_graph.png, id=97, 350.05782pt x 100.12407pt>
+[16] <images/gsn_computational_graph.png, id=100, 350.05782pt x 100.12407pt>
 File: images/gsn_computational_graph.png Graphic file (type png)
 
 <use images/gsn_computational_graph.png>
@@ -861,7 +868,7 @@ OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]; Z[]; H[]\OT1/cmr/m/n/
 
 LaTeX Warning: Citation `rezende14' on page 17 undefined on input line 41.
 
-<images/gsn_markov_chain.png, id=98, 548.0475pt x 161.85469pt>
+<images/gsn_markov_chain.png, id=101, 548.0475pt x 161.85469pt>
 File: images/gsn_markov_chain.png Graphic file (type png)
 
 <use images/gsn_markov_chain.png>
@@ -875,7 +882,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <./images/gsn_computational_graph.png> <./images/gsn_markov_chain.png>]
-<images/mixing_problem.png, id=103, 680.5425pt x 437.38406pt>
+<images/mixing_problem.png, id=107, 680.5425pt x 437.38406pt>
 File: images/mixing_problem.png Graphic file (type png)
 
 <use images/mixing_problem.png>
@@ -904,13 +911,13 @@ Chapter 5.
 (./chapters/model1.tex [20
 
 ]
-<images/gsn_samples.png, id=114, 562.1pt x 562.1pt>
+<images/gsn_samples.png, id=117, 562.1pt x 562.1pt>
 File: images/gsn_samples.png Graphic file (type png)
 
 <use images/gsn_samples.png>
 Package pdftex.def Info: images/gsn_samples.png used on input line 11.
 (pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
-)
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -924,46 +931,160 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[22] <images/story1_reconstruction.png, id=124, 1124.2pt x 320.19624pt>
+File: images/story1_reconstruction.png Graphic file (type png)
+
+<use images/story1_reconstruction.png>
+Package pdftex.def Info: images/story1_reconstruction.png used on input line 51
+.
+(pdftex.def)             Requested size: 416.83289pt x 118.71992pt.
+
+<images/average_mnist_train.png, id=125, 281.05pt x 28.105pt>
+File: images/average_mnist_train.png Graphic file (type png)
+
+<use images/average_mnist_train.png>
+Package pdftex.def Info: images/average_mnist_train.png used on input line 57.
+(pdftex.def)             Requested size: 208.41644pt x 20.84152pt.
+
+<images/story1_samples_100.png, id=126, 562.1pt x 562.1pt>
+File: images/story1_samples_100.png Graphic file (type png)
+
+<use images/story1_samples_100.png>
+Package pdftex.def Info: images/story1_samples_100.png used on input line 66.
+(pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./images/story1_reconstruction.png> <./images/average_mnist_train.png (PNG
+ copy)>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./images/story1_samples_100.png (PNG copy)>]
 Chapter 6.
-(./chapters/model2.tex
-Overfull \hbox (28.24483pt too wide) in paragraph at lines 7--7
+(./chapters/model2.tex [25
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26] <images/story2_reconstruction.png, id=141, 1124.2pt x 318.18875pt>
+File: images/story2_reconstruction.png Graphic file (type png)
+
+<use images/story2_reconstruction.png>
+Package pdftex.def Info: images/story2_reconstruction.png used on input line 32
+.
+(pdftex.def)             Requested size: 416.83289pt x 117.9756pt.
+
+<images/story2_samples_300.png, id=142, 562.1pt x 562.1pt>
+File: images/story2_samples_300.png Graphic file (type png)
+
+<use images/story2_samples_300.png>
+Package pdftex.def Info: images/story2_samples_300.png used on input line 39.
+(pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (28.24483pt too wide) in paragraph at lines 44--44
 []\OT1/cmr/bx/n/17.28 Extending the walk-back pro-ce-dure to se-quenced
  []
 
-) [23
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./images/story2_reconstruction.png>])
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./images/story2_samples_300.png (PNG copy)>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 Chapter 7.
 (./chapters/model3.tex
 
-LaTeX Warning: Citation `lenet5' on page 24 undefined on input line 1.
+LaTeX Warning: Citation `lenet5' on page 30 undefined on input line 1.
 
-) [24
+[30
 
-]
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
 Chapter 8.
-(./chapters/discussion.tex) [25
+(./chapters/discussion.tex [32
 
 ]
-Chapter 9.
-(./chapters/conclusion.tex)
-No file main.bbl.
-[26
+<images/rnnrbm_samples.png, id=163, 562.1pt x 562.1pt>
+File: images/rnnrbm_samples.png Graphic file (type png)
 
-] (./main.aux)
+<use images/rnnrbm_samples.png>
+Package pdftex.def Info: images/rnnrbm_samples.png used on input line 26.
+(pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./images/rnnrbm_samples.png (PNG copy)>]
+Chapter 9.
+(./chapters/conclusion.tex) [34
+
+]
+No file main.bbl.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5037 strings out of 495059
- 70048 string characters out of 3182031
+ 5069 strings out of 495059
+ 71040 string characters out of 3182031
  162290 words of memory out of 3000000
- 8100 multiletter control sequences out of 15000+200000
+ 8126 multiletter control sequences out of 15000+200000
  10274 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,11n,43p,1692b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,14n,43p,2022b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -977,10 +1098,10 @@ cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (33 pages, 706564 bytes).
+Output written on main.pdf (43 pages, 1259998 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 222 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,11 +15,11 @@ As long as the learned distribution \(P_{\Theta_n}(X|\widetilde{X})\) is a consi
 
 \subsection{Easing restrictive conditions on the denoising auto-encoder}
 
-A few restrictive conditions are necessary to guarantee ergocity of the Markov chain - requiring \(C(\widetilde{X}|X) > 0\) everywhere that \(P(X) > 0\). Particularly, a large region \(V\) containing any possible \(X\) is defined such that the probability of moving between any two points in a single jump \(C(\widetilde{X}|X)\) must be greater than 0. This restriction requires that \(P_{\Theta_n}(X|\widetilde{X})\) has the ability to model every mode of \(P(X)\), which is a problem this model was meant to avoid.
+A few restrictive conditions are necessary to guarantee ergodicity of the Markov chain - requiring \(C(\widetilde{X}|X) > 0\) everywhere that \(P(X) > 0\). Particularly, a large region \(V\) containing any possible \(X\) is defined such that the probability of moving between any two points in a single jump \(C(\widetilde{X}|X)\) must be greater than 0. This restriction requires that \(P_{\Theta_n}(X|\widetilde{X})\) has the ability to model every mode of \(P(X)\), which is a problem this model was meant to avoid.
 
 To ease this restriction, Bengio et al. \cite{gsn} proves that using a \(C(\widetilde{X}|X)\) that only makes small jumps allows \(P_{\Theta}(X|\widetilde{X})\) to model a small part of the space \(V\) around each \(\widetilde{X}\). This weaker condition means that modeling the reconstruction distribution \(P(X|\widetilde{X})\) would be easier since it would probably have fewer modes. 
 
-However, the jump size \(\sigma\) between points must still be large enough to guarantee that one can jump often enough between the major modes of \(P(X)\) to overcome the deserts of low probability: \(\sigma\) must be larger than half the largest distance of low probability between two nearby modes, such that \(V\) has at least a single connected component between modes. This presents a tradeoff between the difficulty of learning \(P_{\Theta}(X|\widetilde{X})\) and the ease of mixing between modes seperated by this low probability desert.
+However, the jump size \(\sigma\) between points must still be large enough to guarantee that one can jump often enough between the major modes of \(P(X)\) to overcome the deserts of low probability: \(\sigma\) must be larger than half the largest distance of low probability between two nearby modes, such that \(V\) has at least a single connected component between modes. This presents a tradeoff between the difficulty of learning \(P_{\Theta}(X|\widetilde{X})\) and the ease of mixing between modes separated by this low probability desert.
 
 
 \subsection{Generalizing to GSN}
@@ -50,9 +50,9 @@ GSNs also use the notion of walkback to aid training. The resulting Markov chain
 
 \section{Extension to recurrent deep GSN}
 
-Similar to RBMs, sequences of GSNs can be learned by a recurrent step in the parameters or latent states over the sequence of input variables. The main reason this approach works is because deep architectures help solve the multi-modal problem of complex input data explained in the Introduction and can easily mix between many modes.
+Similar to RBMs, sequences of GSNs can be learned by a recurrent step in the parameters or latent states over the sequence of input variables. This approach works because deep architectures help solve the multi-modal problem of complex input data explained in the Introduction and can easily mix between many modes.
 
-The main mixing problem comes from the complicated data manifold surfaces of the input space; transitioning from one MNIST digit to the next in the input space generally looks like a messy blend of the two numbers in the intermediate steps. As more layers are learned, more abstract features lead to better disentangling of the input data, which ends up unfolding the manifolds to fill a larger part of the representation space. Because these manifolds become closer together, Markov Chain Monte Carlo (MCMC) sampling between them moves between the modes of the input data easier and creates a much better mixing between the modes.
+The main mixing problem comes from the complicated data manifold surfaces of the input space; transitioning from one MNIST digit to the next in the input space generally looks like a messy blend of the two numbers in the intermediate steps. As more layers are learned, more abstract features lead to better disentangling of the input data, which ends up unfolding the manifolds to fill a larger part of the representation space. Because these manifolds become closer together, Markov Chain Monte Carlo (MCMC) sampling between them moves more easily between the modes of the input data and creates a much better mixing between the modes.
 
 \begin{figure}[h!]
   \centering

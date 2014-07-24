@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  23 JUL 2014 06:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  23 JUL 2014 16:01
 entering extended mode
 **C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
 (C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
@@ -644,6 +644,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <C:/Users/marku_000/Documents/GitHub/Thesis/images/pca.png>]
+Overfull \hbox (3.19498pt too wide) in paragraph at lines 36--36
+[]\OT1/cmr/bx/n/14.4 Probabilistic mod-els: Re-stricted Boltz-mann Ma-chine
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -981,7 +985,7 @@ ublic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on main.pdf (46 pages, 1290873 bytes).
+Output written on main.pdf (46 pages, 1291015 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

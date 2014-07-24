@@ -1,4 +1,4 @@
-While Model 1 works well predicting the next input digit given the current one, it is limited to working over the entire dataset to first train the GSN and then again to train the regression step (repeating until convergence). Sequential data, however, often requires an online learning method when the entire dataset cannot available and must be collected sequentially, while both training and providing predictions as data arrives.
+While Model 1 works well predicting the next input digit given the current one, it is limited to working over the entire dataset to first train the GSN and then again to train the regression step (repeating until convergence). Sequential data, however, often requires an online learning method when the entire dataset is not available and must be collected sequentially, while both training and providing predictions as data arrives.
 
 \section{Online learning with real-sequenced data }
 The GSNs of Model 1 can be learned in a quasi-online manner: for each sequential group of inputs, perform a GSN training update after \(k\) walkbacks, and then update the regression parameters. However, when updating on an individual input level, these sequential GSNs converge slowly and can get stuck in bad configurations due to the regression step (which is simple linear regression) being trained on a not-yet-useful hidden representation of the complex input data. If the regression step is trained poorly, it affects the remaining GSN parameter training steps by providing bad sequential predictions for the GSN to attempt to reconstruct.
@@ -25,7 +25,7 @@ Currently, GSNs use tied weights between layers to make backpropagation easier. 
 
 Using the same general training parameters with regards to noise, learning rate, annealing, momentum, epochs, hidden layers, and activation as Model 1, Model 2 performs similarly with regards to binary cross-entropy as Model 1 on the artificially sequenced MNIST dataset. For the next immediate predicted number, it achieved a binary cross-entropy of 0.2318.  For the predicted number six iterations ahead, it achieved a binary cross-entropy of 0.2268. This cross-entropy is lower because six iterations ahead can utilize higher layers of representation in the GSN due to the way the computational graph is formed.
 
-Even though cross-entropy is similar to Model 1, reconstruction images paint a different picture.
+Even though cross-entropy is similar to Model 1, reconstruction images paint a different picture. Due to untied weights taking longer to train, the next predicted digits looks less refined than the averages produced from Model 1 over the same number of iterations. However, as the number of predictions ahead increases, the digits begin to look more like the averages. This could be explained by further predictions ahead utilizing the higher layers of representation based on the way the computational graph is formed.
 
 \begin{figure}[h!]
   \centering

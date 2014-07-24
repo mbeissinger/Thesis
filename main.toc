@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {3}Background: Deep Architectures}{6}
 \contentsline {section}{\numberline {3.1}Representation Learning}{6}
 \contentsline {section}{\numberline {3.2}Interpretations of Deep Architectures}{7}
-\contentsline {subsection}{\numberline {3.2.1}Probabilistic models: restricted boltzmann machine (RBM)}{9}
+\contentsline {subsection}{\numberline {3.2.1}Probabilistic models: Restricted Boltzmann Machine (RBM)}{9}
 \contentsline {subsection}{\numberline {3.2.2}Direct encoding models: auto-encoder}{11}
 \contentsline {section}{\numberline {3.3}Denoising Auto-encoders}{12}
 \contentsline {chapter}{\numberline {4}General Methodology: Deep Generative Stochastic Networks (GSN)}{15}

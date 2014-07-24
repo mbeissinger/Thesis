@@ -33,7 +33,7 @@ From a probabilistic viewpoint, PCA is simply finding the principal eigenvectors
 
 Note that because PCA is a linear transformation of the input \(x\), it cannot really be stacked in layers because the composition of linear operations is just another linear operation. There would be no abstraction benefit of multiple layers. To show these two methods of analysis, this section will examine stacking Restricted Boltzmann Machines (RBM) from a probability viewpoint and nonlinear auto-encoders from a direct encoding viewpoint.
 
-\subsection{Probabilistic models: restricted boltzmann machine (RBM)}
+\subsection{Probabilistic models: Restricted Boltzmann Machine (RBM)}
 A Boltzmann machine is a network of symmetrically-coupled binary random variables or units. This means that it is a fully-connected, undirected graph. This graph can be divided into two parts:
 
 \begin{enumerate}
@@ -45,14 +45,14 @@ Boltzmann machines describe this pattern of interaction through the distribution
 \[\varepsilon_\Theta^{BM} (x,h) = -\frac{1}{2} x^T Ux - \frac{1}{2} h^T Vh - x^T Wh - b^T x - d^T h\]
 Where the model parameters \(\Theta\) are \(\left\{U,V,W,b,d\right\}\).
 
-Evaluating conditional probabilities over this fully connected graph ends up being an intractable problem. For example, computing the conditional probability of hidden variable given the visibles, \(P(h_i | x)\), requires marginalizing over all the other hidden variables. This would be evaluating a sum with \(2dh - 1\) terms.
+Evaluating conditional probabilities over this fully connected graph ends up being an intractable problem. For example, computing the conditional probability of a hidden variable given the visibles, \(P(h_i | x)\), requires marginalizing over all the other hidden variables. This would be evaluating a sum with \(2dh - 1\) terms.
 
 However, we can restrict the graph from being fully connected to only containing the interactions between the visible units \(x\) and hidden units \(h\). 
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.45\textwidth]{restricted_boltzmann}
-\caption{A Restricted Boltzmann machine.}
+\caption{A Restricted Boltzmann Machine.}
 \end{figure}
 
 This gives us an RBM, which is a \emph{bipartite} graph with the visible and hidden units forming distinct layers. Calculating the conditional distribution \(P(h_i | x)\) is readily tractable and factorizes to: 
@@ -70,7 +70,7 @@ Very successful deep learning algorithms stack multiple RBMs together, where the
 There are a few drawbacks to the probabilistic approach to deep architectures:
 \begin{enumerate}
 \item The posterior distribution \(P(h_i | x)\) becomes incredibly complicated if the model has more than a few interconnected layers. We are forced to resort to sampling or approximate inference techniques to solve the distribution, which has computational and approximation error prices.
-\item Calculating this distribution over latent variables still does not give a usable feature vector to train a final classifier to make this algorithm useful for AI tasks. For example, we calculate all of these hidden distributions that explain the variations over the handwriting digit recognition problem, but they do not give a final classification of a number. Actual feature values are normally derived from the distribution, taking the latent variable's expected value, which are then used as the input to a normal machine learning classifier, such as logistic regression.
+\item Calculating this distribution over latent variables still does not give a usable feature vector to train a final classifier to make this algorithm useful for AI tasks. For example, the calculations of these hidden distributions explain the variations over the handwriting digit recognition problem, but they do not give a final classification of a number. Actual feature values are normally derived from the distribution, taking the latent variable's expected value, which are then used as the input to a normal machine learning classifier, such as logistic regression.
 \end{enumerate}
 
 \subsection{Direct encoding models: auto-encoder}
@@ -78,7 +78,7 @@ To get around the problem of deriving useful feature values, an auto-encoder is 
 \[f_\Theta (x) = s_f (b + Wx)\]
 
 This resulting transformation is the feature-vector or representation computed from input \(x\).
-Conversely, a decoder function is then used to map from this feature space \(h\) back to the input space, which results in a reconstruction \(x'\). This decoder is also a parameterized closed-form equation that is a nonlinear undoing the encoding function:
+Conversely, a decoder function is then used to map from this feature space \(h\) back to the input space, which results in a reconstruction \(x'\). This decoder is also a parameterized closed-form equation that is a nonlinear function undoing the encoding function:
 \[g_\Theta (h) = s_g (d + W' h)\]
 
 In both cases, the nonlinear function s is normally an element-wise sigmoid, hyperbolic tangent nonlinearity, or rectifier linear unit.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  23 JUL 2014 16:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  24 JUL 2014 17:17
 entering extended mode
 **C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
 (C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
@@ -470,18 +470,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen136
 )
 (C:\Users\marku_000\Documents\GitHub\Thesis\main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -637,6 +637,11 @@ File: images/pca.png Graphic file (type png)
 Package pdftex.def Info: images/pca.png used on input line 28.
 (pdftex.def)             Requested size: 270.93883pt x 298.82376pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[][]\OT1/cmr/m/n/10 http://www.simafore.com/Portals/64283/images/principal-comp
+onent-analysis-simple-
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -644,7 +649,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <C:/Users/marku_000/Documents/GitHub/Thesis/images/pca.png>]
-Overfull \hbox (3.19498pt too wide) in paragraph at lines 36--36
+Overfull \hbox (3.19498pt too wide) in paragraph at lines 37--37
 []\OT1/cmr/bx/n/14.4 Probabilistic mod-els: Re-stricted Boltz-mann Ma-chine
  []
 
@@ -658,15 +663,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
-Package pdftex.def Info: images/restricted_boltzmann.png used on input line 54.
+Package pdftex.def Info: images/restricted_boltzmann.png used on input line 55.
 
-(pdftex.def)             Requested size: 187.57352pt x 199.45564pt.
+(pdftex.def)             Requested size: 166.7306pt x 177.29166pt.
 
 <images/stacked_rbm.jpg, id=72, 213.79875pt x 300.12125pt>
 File: images/stacked_rbm.jpg Graphic file (type jpg)
 
 <use images/stacked_rbm.jpg>
-Package pdftex.def Info: images/stacked_rbm.jpg used on input line 66.
+Package pdftex.def Info: images/stacked_rbm.jpg used on input line 67.
 (pdftex.def)             Requested size: 83.3653pt x 117.02391pt.
 
 
@@ -691,7 +696,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/stacked_autoencoder.png Graphic file (type png)
 
 <use images/stacked_autoencoder.png>
-Package pdftex.def Info: images/stacked_autoencoder.png used on input line 91.
+Package pdftex.def Info: images/stacked_autoencoder.png used on input line 94.
 (pdftex.def)             Requested size: 333.46758pt x 102.70828pt.
 
 
@@ -703,12 +708,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12 <C:/Users/marku_000/Documents/GitHub/Thesis/images/stacked_autoencoder.png>
 ]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13])
+[13]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -818,16 +827,6 @@ File: images/average_mnist_train.png Graphic file (type png)
 Package pdftex.def Info: images/average_mnist_train.png used on input line 57.
 (pdftex.def)             Requested size: 208.41644pt x 20.84152pt.
 
-<images/story1_samples_100.png, id=125, 562.1pt x 562.1pt>
-File: images/story1_samples_100.png Graphic file (type png)
-
-<use images/story1_samples_100.png>
-Package pdftex.def Info: images/story1_samples_100.png used on input line 66.
-(pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -836,7 +835,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story1_reconstruction.pn
 g> <C:/Users/marku_000/Documents/GitHub/Thesis/images/average_mnist_train.png (
-PNG copy)>]
+PNG copy)>] <images/story1_samples_100.png, id=130, 562.1pt x 562.1pt>
+File: images/story1_samples_100.png Graphic file (type png)
+
+<use images/story1_samples_100.png>
+Package pdftex.def Info: images/story1_samples_100.png used on input line 66.
+(pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -886,9 +891,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story2_reconstruction.pn
 g>])
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -965,7 +967,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  4759 strings out of 493921
  67582 string characters out of 3144864
- 155067 words of memory out of 3000000
+ 155065 words of memory out of 3000000
  7949 multiletter control sequences out of 15000+200000
  10274 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -985,7 +987,7 @@ ublic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on main.pdf (46 pages, 1291015 bytes).
+Output written on main.pdf (46 pages, 1293266 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

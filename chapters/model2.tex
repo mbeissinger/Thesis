@@ -33,7 +33,7 @@ Even though cross-entropy is similar to Model 1, reconstruction images paint a d
 \caption{Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}
 \end{figure}
 
-Learning with untied weights is much slower, but still provides evidence that the hidden layers themselves can learn useful representations for complex input sequences. Looking at the generated samples after 300 training iterations, mixing between sequential modes is evident.
+Learning with untied weights is much slower, but still provides evidence that the hidden layers themselves can learn useful representations for complex input sequences. Looking at the generated samples after 300 training iterations, mixing between sequential modes is evident as the samples appear to be generated in the same 0-9 order as the sequenced data:
 \begin{figure}[h!]
   \centering
     \includegraphics[width=.8\textwidth]{story2_samples_300}
@@ -45,7 +45,7 @@ Learning with untied weights is much slower, but still provides evidence that th
 
 This online model loses the ability to use walkback training to reduce spurious modes. However, walkback could theoretically be generalized to the sequential case by sampling from possible variations of past hidden representations that could lead to the current input. Intuitively, this idea comes from the method of explaining current inputs with imperfect memory recall of past inputs. By sampling from the representation layer repeatedly, a series of potentially viable past representations that lead to the current input are created and used to train GSN parameters leading to the current input. This method uses past inputs as context to create viable variations of sequences in the representation space, which in turn acts to create more robust mixing between the modes in the sequence space.
 
-The general process for creating sequential walkbacks is as follows:
+The general process for creating sequential walkbacks described here is as follows:
 \begin{algorithm}[h!]
 	\For{k walkbacks}{
 		Given input \(x\), take a backward step with the GSN using transposed weights and negated bias to create the previous hidden representation \(H\)\;

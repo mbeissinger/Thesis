@@ -17,8 +17,8 @@ One good analogue for deep architectures is neurons in the brain (a motivation f
 There are two main ways to interpret the computation performed by these layered deep architectures:
 
 \begin{itemize}
-\item \emph{Probabilistic graphical models} have nodes in each layer that are considered as latent random variables. In this case, you care about the probability distribution of the input data \(x\) and the hidden latent random variables \(h\) that describe the input data in the joint distribution \(p(x,h)\). These latent random variables describe a distribution over the observed data.
-\item \emph{Direct encoding models} have nodes in each layer that are considered as computational units. This means each node \(h\) performs some computation (normally nonlinear, such as a sigmoidal function, hyperbolic tangent nonlinearity, or rectifier linear unit) given its inputs from the previous layer.
+\item \emph{Probabilistic graphical models} have nodes in each layer that are considered as latent random variables. In this case, the probability distribution of the input data \(x\) and the hidden latent random variables \(h\) that describe the input data in the joint distribution \(p(x,h)\) are the model. These latent random variables describe a distribution over the observed data.
+\item \emph{Direct encoding models} have nodes in each layer that are considered as computational units. This means each node \(h\) performs some computation (normally nonlinear, such as a sigmoidal function, hyperbolic tangent, or rectifier linear unit) given its inputs from the previous layer.
 \end{itemize}
 
 To illustrate, principal component analysis (PCA) is a simple feature extraction algorithm that can span both of these interpretations. PCA learns a linear transform \(h = f(x) = W^T x + b\) where \(W\) is a weight matrix for the inputs \(x\) and \(b\) is a bias term. The columns of the \(dx \times dh\) matrix \(W\) form an orthogonal basis for the \(dh\) orthogonal directions of greatest variance in the input training data \(x\). The result is \(dh\) decorrelated features that make representation layer \(h\). 
@@ -26,10 +26,11 @@ To illustrate, principal component analysis (PCA) is a simple feature extraction
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.65\textwidth]{pca}
-\caption{Principal component analysis.}
+\caption[PCA]{Principal component analysis\footnotemark{}.}
 \end{figure}
+\footnotetext{http://www.simafore.com/Portals/64283/images/principal-component-analysis-simple-explanation.png}
 
-From a probabilistic viewpoint, PCA is simply finding the principal eigenvectors of the covariance matrix of the data. This means that you are finding which features of the input data can explain away the most variance in the data\cite{bach05}. From an encoding viewpoint, PCA is performing a linear computation over the input data to form a hidden representation h that has a lower dimensionality than the data.
+From a probabilistic viewpoint, PCA is simply finding the principal eigenvectors of the covariance matrix of the data. PCA finds which features of the input data can explain away the most variance in the data\cite{bach05}. From an encoding viewpoint, PCA is performing a linear computation over the input data to form a hidden representation h that has a lower dimensionality than the data.
 
 Note that because PCA is a linear transformation of the input \(x\), it cannot really be stacked in layers because the composition of linear operations is just another linear operation. There would be no abstraction benefit of multiple layers. To show these two methods of analysis, this section will examine stacking Restricted Boltzmann Machines (RBM) from a probability viewpoint and nonlinear auto-encoders from a direct encoding viewpoint.
 
@@ -51,7 +52,7 @@ However, we can restrict the graph from being fully connected to only containing
 
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=0.45\textwidth]{restricted_boltzmann}
+    \includegraphics[width=0.4\textwidth]{restricted_boltzmann}
 \caption{A Restricted Boltzmann Machine.}
 \end{figure}
 
@@ -59,13 +60,15 @@ This gives us an RBM, which is a \emph{bipartite} graph with the visible and hid
 \[P(h | x) = \prod_i P(h_i | x)\]
 \[P(h_i = 1 | x) = sigmoid \left( \sum_j W_{ji} x_j + d_i \right)\]
 
-Very successful deep learning algorithms stack multiple RBMs together, where the hiddens \(h\) from the visible input data \(x\) become the new input data for another RBM for an arbitrary number of layers. 
+Very successful deep learning algorithms stack multiple RBMs together, where the hidden units \(h\) from the visible input data \(x\) become the new input data for another RBM for an arbitrary number of layers. 
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=0.2\textwidth]{stacked_rbm}
 \caption{Stacked RBM.}
 \end{figure}
+
+
 
 There are a few drawbacks to the probabilistic approach to deep architectures:
 \begin{enumerate}
@@ -92,7 +95,7 @@ Stacking auto-encoders in layers is the same process as with RBMs.
 \caption{Stacked auto-encoder.}
 \end{figure}
 
-One disadvantage of auto-encoders is that they can easily memorize the training data (i.e. find the model parameters that map every input seen to a perfect reconstruction with zero error) given enough hidden units \(h\). To combat this problem, regularization is necessary, which gives rise to variants such as sparse auto-encoders, contractive auto-encoders, or denoising auto-encoders.
+One disadvantage of auto-encoders is that they can easily memorize the training data (i.e., find the model parameters that map every input seen to a perfect reconstruction with zero error) given enough hidden units \(h\). To combat this problem, regularization is necessary, which gives rise to variants such as sparse auto-encoders, contractive auto-encoders, or denoising auto-encoders.
 
 A practical advantage of auto-encoder variants is that they define a simple, tractable optimization objective that can be used to monitor progress.
 

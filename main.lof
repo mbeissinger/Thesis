@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces An example deep architecture.}}{7}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Principal component analysis.}}{8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces PCA}}{8}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces A Restricted Boltzmann Machine.}}{10}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Stacked RBM.}}{11}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Stacked auto-encoder.}}{12}
@@ -14,7 +14,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}}{21}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{23}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Average MNIST training data by digit.}}{23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Model 1 sampling after 90 training iterations.}}{24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Model 1 sampling after 90 training iterations; smooth mixing between major modes.}}{24}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{28}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  24 JUL 2014 17:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  24 JUL 2014 20:43
 entering extended mode
 **C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
 (C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
@@ -617,12 +617,12 @@ es-advanced-ai-effort-to-
 
 [6
 
-] <images/neural_net.png, id=55, 488.82625pt x 321.2pt>
+] <images/neural_net.png, id=55, 404.2302pt x 252.4632pt>
 File: images/neural_net.png Graphic file (type png)
 
 <use images/neural_net.png>
 Package pdftex.def Info: images/neural_net.png used on input line 12.
-(pdftex.def)             Requested size: 250.10226pt x 164.33916pt.
+(pdftex.def)             Requested size: 250.10226pt x 156.20581pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -631,7 +631,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7 <C:/Users/marku_000/Documents/GitHub/Thesis/images/neural_net.png>]
-<images/pca.png, id=62, 336.50719pt x 371.13657pt>
+<images/pca.png, id=63, 336.50719pt x 371.13657pt>
 File: images/pca.png Graphic file (type png)
  <use images/pca.png>
 Package pdftex.def Info: images/pca.png used on input line 28.
@@ -659,20 +659,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <images/restricted_boltzmann.png, id=71, 250.6474pt x 266.52173pt>
+[9] <images/restricted_boltzmann.png, id=71, 225.4824pt x 242.3454pt>
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
 Package pdftex.def Info: images/restricted_boltzmann.png used on input line 55.
 
-(pdftex.def)             Requested size: 166.7306pt x 177.29166pt.
+(pdftex.def)             Requested size: 166.7306pt x 179.20705pt.
 
-<images/stacked_rbm.jpg, id=72, 213.79875pt x 300.12125pt>
-File: images/stacked_rbm.jpg Graphic file (type jpg)
+<images/stacked_rbm.png, id=72, 227.4096pt x 324.2514pt>
+File: images/stacked_rbm.png Graphic file (type png)
 
-<use images/stacked_rbm.jpg>
-Package pdftex.def Info: images/stacked_rbm.jpg used on input line 67.
-(pdftex.def)             Requested size: 83.3653pt x 117.02391pt.
+<use images/stacked_rbm.png>
+Package pdftex.def Info: images/stacked_rbm.png used on input line 67.
+(pdftex.def)             Requested size: 83.3653pt x 118.86285pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -691,13 +691,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <C:/Users/marku_000/Documents/GitHub/Thesis/images/stacked_rbm.jpg>]
-<images/stacked_autoencoder.png, id=82, 574.39594pt x 176.91093pt>
+[11 <C:/Users/marku_000/Documents/GitHub/Thesis/images/stacked_rbm.png>]
+<images/stacked_autoencoder.png, id=83, 625.3764pt x 151.767pt>
 File: images/stacked_autoencoder.png Graphic file (type png)
 
 <use images/stacked_autoencoder.png>
 Package pdftex.def Info: images/stacked_autoencoder.png used on input line 94.
-(pdftex.def)             Requested size: 333.46758pt x 102.70828pt.
+(pdftex.def)             Requested size: 333.46758pt x 80.92937pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -736,13 +736,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <images/gsn_computational_graph.png, id=99, 350.05782pt x 100.12407pt>
+[16] <images/gsn_computational_graph.png, id=101, 387.3672pt x 135.3858pt>
 File: images/gsn_computational_graph.png Graphic file (type png)
 
 <use images/gsn_computational_graph.png>
 Package pdftex.def Info: images/gsn_computational_graph.png used on input line 
 36.
-(pdftex.def)             Requested size: 250.10226pt x 71.53621pt.
+(pdftex.def)             Requested size: 250.10226pt x 87.41096pt.
 
 Overfull \hbox (8.8535pt too wide) in paragraph at lines 39--40
 []\OT1/cmr/m/n/12 The la-tent state vari-able $\OML/cmm/m/it/12 H$ \OT1/cmr/m/n
@@ -751,12 +751,12 @@ OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]; Z[]; H[]\OT1/cmr/m/n/
 12 )$,
  []
 
-<images/gsn_markov_chain.png, id=100, 548.0475pt x 161.85469pt>
+<images/gsn_markov_chain.png, id=102, 645.1302pt x 262.581pt>
 File: images/gsn_markov_chain.png Graphic file (type png)
 
 <use images/gsn_markov_chain.png>
 Package pdftex.def Info: images/gsn_markov_chain.png used on input line 45.
-(pdftex.def)             Requested size: 333.46758pt x 98.48424pt.
+(pdftex.def)             Requested size: 333.46758pt x 135.72552pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -766,7 +766,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17 <C:/Users/marku_000/Documents/GitHub/Thesis/images/gsn_computational_graph.
 png> <C:/Users/marku_000/Documents/GitHub/Thesis/images/gsn_markov_chain.png>]
-<images/mixing_problem.png, id=106, 680.5425pt x 437.38406pt>
+<images/mixing_problem.png, id=110, 680.5425pt x 437.38406pt>
 File: images/mixing_problem.png Graphic file (type png)
 
 <use images/mixing_problem.png>
@@ -791,7 +791,7 @@ Chapter 5.
 (C:\Users\marku_000\Documents\GitHub\Thesis\chapters/model1.tex [20
 
 ]
-<images/gsn_samples.png, id=116, 562.1pt x 562.1pt>
+<images/gsn_samples.png, id=120, 562.1pt x 562.1pt>
 File: images/gsn_samples.png Graphic file (type png)
 
 <use images/gsn_samples.png>
@@ -812,7 +812,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/story1_reconstruction.png, id=123, 1124.2pt x 320.19624pt>
+[22] <images/story1_reconstruction.png, id=127, 1124.2pt x 320.19624pt>
 File: images/story1_reconstruction.png Graphic file (type png)
 
 <use images/story1_reconstruction.png>
@@ -820,7 +820,7 @@ Package pdftex.def Info: images/story1_reconstruction.png used on input line 51
 .
 (pdftex.def)             Requested size: 416.83289pt x 118.71992pt.
 
-<images/average_mnist_train.png, id=124, 281.05pt x 28.105pt>
+<images/average_mnist_train.png, id=128, 281.05pt x 28.105pt>
 File: images/average_mnist_train.png Graphic file (type png)
 
 <use images/average_mnist_train.png>
@@ -835,7 +835,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story1_reconstruction.pn
 g> <C:/Users/marku_000/Documents/GitHub/Thesis/images/average_mnist_train.png (
-PNG copy)>] <images/story1_samples_100.png, id=130, 562.1pt x 562.1pt>
+PNG copy)>] <images/story1_samples_100.png, id=134, 562.1pt x 562.1pt>
 File: images/story1_samples_100.png Graphic file (type png)
 
 <use images/story1_samples_100.png>
@@ -860,7 +860,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <images/story2_reconstruction.png, id=140, 1124.2pt x 318.18875pt>
+[26] <images/story2_reconstruction.png, id=144, 1124.2pt x 318.18875pt>
 File: images/story2_reconstruction.png Graphic file (type png)
 
 <use images/story2_reconstruction.png>
@@ -868,7 +868,7 @@ Package pdftex.def Info: images/story2_reconstruction.png used on input line 32
 .
 (pdftex.def)             Requested size: 416.83289pt x 117.9756pt.
 
-<images/story2_samples_300.png, id=141, 562.1pt x 562.1pt>
+<images/story2_samples_300.png, id=145, 562.1pt x 562.1pt>
 File: images/story2_samples_300.png Graphic file (type png)
 
 <use images/story2_samples_300.png>
@@ -921,7 +921,7 @@ Chapter 8.
 (C:\Users\marku_000\Documents\GitHub\Thesis\chapters/discussion.tex [32
 
 ]
-<images/rnnrbm_samples.png, id=162, 562.1pt x 562.1pt>
+<images/rnnrbm_samples.png, id=166, 562.1pt x 562.1pt>
 File: images/rnnrbm_samples.png Graphic file (type png)
 
 <use images/rnnrbm_samples.png>
@@ -965,8 +965,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38] (C:\Users\marku_000\Documents\GitHub\Thesis\main.aux) ) 
 Here is how much of TeX's memory you used:
- 4759 strings out of 493921
- 67582 string characters out of 3144864
+ 4758 strings out of 493921
+ 67578 string characters out of 3144864
  155065 words of memory out of 3000000
  7949 multiletter control sequences out of 15000+200000
  10274 words of font info for 37 fonts, out of 3000000 for 9000
@@ -987,9 +987,9 @@ ublic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on main.pdf (46 pages, 1293266 bytes).
+Output written on main.pdf (46 pages, 1276536 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

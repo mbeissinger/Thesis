@@ -19,6 +19,8 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{28}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Model 3 reconstruction of current digits and predicted next digits after 300 iterations.}}{32}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{33}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{35}
 \addvspace {10\p@ }

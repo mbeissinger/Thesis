@@ -24,5 +24,5 @@
 \contentsline {section}{\numberline {7.1}Generalizing the EM model}{30}
 \contentsline {section}{\numberline {7.2}Algorithm}{31}
 \contentsline {section}{\numberline {7.3}Experimental results}{31}
-\contentsline {chapter}{\numberline {8}Discussion of Results}{32}
-\contentsline {chapter}{\numberline {9}Conclusion}{34}
+\contentsline {chapter}{\numberline {8}Discussion of Results}{34}
+\contentsline {chapter}{\numberline {9}Conclusion}{36}

@@ -1,10 +1,15 @@
-This first approach is most similar to Sequential Deep Belief Networks in that it learns a transition operator between hidden latent states \(H\). This model uses the power of GSN's to learn hidden representations that vastly reduce the complexity of the input data space, making transitions between data manifolds at higher layers of representation much easier. Therefore, the transition step of learning \(H \rightarrow H\) over time should be less complicated (only needing a single linear regression step). This model uses both artificial time-sequencing (for the GSN training to have backpropagation through time to learn the data manifolds), as well as real time-sequencing (for the regression step). Alternating between training the GSN parameters on the generative input sequence through Gibbs sampling and learning the hidden state transition operator on the real sequence of inputs allows the model to tune parameters quickly in an expectation-maximization style of training.
+This first approach is most similar to Sequential Deep Belief Networks in that it learns a transition operator between hidden latent states \(H\). This model uses the power of GSN's to learn hidden representations that vastly reduce the complexity of the input data space, making transitions between data manifolds at higher layers of representation much easier to model. Therefore, the transition step of learning \(H \rightarrow H\) over time should be less complicated (i.e. only needing a single linear regression step between hidden states). This model trains by alternating over two versions of the dataset:
+\begin{enumerate}
+\item A generative Gibbs sampling pass for \(k\) samples on each input in arbitrary order (for the GSN to learn the data manifolds)
+\item A real time-sequenced order of the input to learn the regression \(H \rightarrow H\)
+\end{enumerate}
+Alternating between training the GSN parameters on the generative input sequence through Gibbs sampling and learning the hidden state transition operator on the real sequence of inputs allows the model to tune parameters quickly in an expectation-maximization style of training.
 
 
 
 \section{Recurrent nature of deep GSNs}
 
-While GSNs are inherently recurrent and depend on the previous latent and visible states to determine the current hidden state, \(H_{t} \sim P_{\Theta_1}(H|H_{t-1},X_{t-1})\), this time series \(t\) is artificial and generated through the GSN sampling process. Using this sampling process, GSNs actively mix between modes that are close together in the input space, not the sequential space. For example, a GSN trained on MNIST data will learn to mix well between the modes of digits that look similar in the pixel space - sampling from the digit ``4" transitions to a ``9", etc.
+While GSNs are inherently recurrent and depend on the previous latent and visible states to determine the current hidden state, \(H_{t} \sim P_{\Theta_1}(H|H_{t-1},X_{t-1})\), this ordering \(t\) is generated through the GSN Gibbs sampling process and does not reflect the real sequence of inputs over time. Using this sampling process, GSNs actively mix between modes that are close together in the input space, not the sequential space. For example, a GSN trained on MNIST data will learn to mix well between the modes of digits that look similar in the pixel space - sampling from the digit ``4" transitions to a ``9", etc.
 
 \begin{figure}[h!]
   \centering
@@ -12,7 +17,7 @@ While GSNs are inherently recurrent and depend on the previous latent and visibl
 \caption{Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}
 \end{figure}
 
-To learn transitions between sequential modes in the input space, both time series need to be utilized - the artificial \(t\) from the GSN sampling process and the sequential \(t_{real}\) from the input data sequence.
+To learn transitions between sequential modes in the input space, both  the \(t\) from the GSN sampling process and the sequential \(t_{real}\) from the input data sequence need to be utilized.
 
 
 \section{Algorithm}

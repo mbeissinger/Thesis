@@ -1,21 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.6.29)  20 AUG 2014 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 SEP 2014 15:03
 entering extended mode
-**C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
-(C:/Users/marku_000/Documents/GitHub/Thesis/main.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,22 +25,22 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -61,21 +55,20 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -225,7 +218,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -256,7 +249,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -280,15 +273,15 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\marku_000\Documents\GitHub\Thesis\hyphenat.sty
+(./hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language69
+\langwohyphens=\language79
 LaTeX Info: Redefining \_ on input line 43.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -299,10 +292,10 @@ LaTeX Info: Redefining \_ on input line 43.
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mathtools.sty
 Package: mathtools 2014/05/21 v1.14 mathematical typesetting tools
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count91
 \calc@Bcount=\count92
@@ -310,32 +303,32 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bdimen=\dimen112
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count93
 \calc@Cskip=\skip54
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen113
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen114
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count94
@@ -388,17 +381,16 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen127
 \l_MT_below_shortintertext_sep=\dimen128
 )
-(C:\Users\marku_000\Documents\GitHub\Thesis\algorithm2e.sty
+(./algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count107
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
-)
-(C:\Users\marku_000\Documents\GitHub\Thesis\relsize.sty
+) (./relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 ********************************************************
@@ -441,27 +433,27 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count110
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count111
@@ -469,7 +461,9 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(C:\Users\marku_000\Documents\GitHub\Thesis\main.aux)
+(./main.aux)
+\openout1 = `main.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -517,7 +511,7 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen137
@@ -530,12 +524,56 @@ LaTeX Font Info:    ... okay on input line 29.
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks24
-) [1
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [1
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-]
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/abstract.tex) [2
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[1
+
+] (./chapters/abstract.tex) [2
 
 ]
 
@@ -544,7 +582,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (C:\Users\marku_000\Documents\GitHub\Thesis\main.toc
+[3] (./main.toc
 Overfull \hbox (18.75586pt too wide) in paragraph at lines 9--9
  [] []\OT1/cmr/bx/n/12 General Method-ol-ogy: Deep Gen-er-a-tive Stochas-tic Ne
 t-works (GSN) []  
@@ -554,6 +592,8 @@ t-works (GSN) []
 
 ])
 \tf@toc=\write3
+\openout3 = `main.toc'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -561,10 +601,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] (C:\Users\marku_000\Documents\GitHub\Thesis\main.lof [6
+[5] (./main.lof [6
 
 ])
 \tf@lof=\write4
+\openout4 = `main.lof'.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -572,18 +614,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] (C:\Users\marku_000\Documents\GitHub\Thesis\main.lot)
+[7] (./main.lot)
 \tf@lot=\write5
+\openout5 = `main.lot'.
+
  [8
 
 ]
 Chapter 1.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/introduction.tex [1
+(./chapters/introduction.tex [1
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -597,7 +641,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Chapter 2.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/related_work.tex [3
+(./chapters/related_work.tex [3
 
 ])
 
@@ -615,7 +659,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 Chapter 3.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/background.tex
+(./chapters/background.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
 [][]\OT1/cmr/m/n/10 http://www.technologyreview.com/news/519411/facebook-launch
 es-advanced-ai-effort-to-
@@ -623,7 +667,7 @@ es-advanced-ai-effort-to-
 
 [6
 
-] <images/neural_net.png, id=58, 404.2302pt x 252.4632pt>
+] <images/neural_net.png, id=59, 404.2302pt x 252.4632pt>
 File: images/neural_net.png Graphic file (type png)
 
 <use images/neural_net.png>
@@ -636,8 +680,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <C:/Users/marku_000/Documents/GitHub/Thesis/images/neural_net.png>]
-<images/pca.png, id=66, 336.50719pt x 371.13657pt>
+[7 <./images/neural_net.png>]
+<images/pca.png, id=67, 336.50719pt x 371.13657pt>
 File: images/pca.png Graphic file (type png)
  <use images/pca.png>
 Package pdftex.def Info: images/pca.png used on input line 28.
@@ -654,7 +698,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <C:/Users/marku_000/Documents/GitHub/Thesis/images/pca.png>]
+[8 <./images/pca.png>]
 Overfull \hbox (3.19498pt too wide) in paragraph at lines 37--37
 []\OT1/cmr/bx/n/14.4 Probabilistic mod-els: Re-stricted Boltz-mann Ma-chine
  []
@@ -665,7 +709,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] <images/restricted_boltzmann.png, id=74, 225.4824pt x 242.3454pt>
+[9] <images/restricted_boltzmann.png, id=75, 225.4824pt x 242.3454pt>
 File: images/restricted_boltzmann.png Graphic file (type png)
 
 <use images/restricted_boltzmann.png>
@@ -673,7 +717,7 @@ Package pdftex.def Info: images/restricted_boltzmann.png used on input line 55.
 
 (pdftex.def)             Requested size: 166.7306pt x 179.20705pt.
 
-<images/stacked_rbm.png, id=75, 227.4096pt x 324.2514pt>
+<images/stacked_rbm.png, id=76, 227.4096pt x 324.2514pt>
 File: images/stacked_rbm.png Graphic file (type png)
 
 <use images/stacked_rbm.png>
@@ -689,16 +733,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <C:/Users/marku_000/Documents/GitHub/Thesis/images/restricted_boltzmann.png
->]
+[10 <./images/restricted_boltzmann.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <C:/Users/marku_000/Documents/GitHub/Thesis/images/stacked_rbm.png>]
-<images/stacked_autoencoder.png, id=86, 625.3764pt x 151.767pt>
+[11 <./images/stacked_rbm.png>]
+<images/stacked_autoencoder.png, id=87, 625.3764pt x 151.767pt>
 File: images/stacked_autoencoder.png Graphic file (type png)
 
 <use images/stacked_autoencoder.png>
@@ -711,8 +754,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <C:/Users/marku_000/Documents/GitHub/Thesis/images/stacked_autoencoder.png>
-]
+[12 <./images/stacked_autoencoder.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -732,8 +774,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 Chapter 4.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/general_methodology.tex
-[15
+(./chapters/general_methodology.tex [15
 
 ]
 
@@ -742,7 +783,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <images/gsn_computational_graph.png, id=105, 387.3672pt x 135.3858pt>
+[16] <images/gsn_computational_graph.png, id=106, 387.3672pt x 135.3858pt>
 File: images/gsn_computational_graph.png Graphic file (type png)
 
 <use images/gsn_computational_graph.png>
@@ -757,7 +798,7 @@ OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]; Z[]; H[]\OT1/cmr/m/n/
 12 )$,
  []
 
-<images/gsn_markov_chain.png, id=106, 645.1302pt x 262.581pt>
+<images/gsn_markov_chain.png, id=107, 645.1302pt x 262.581pt>
 File: images/gsn_markov_chain.png Graphic file (type png)
 
 <use images/gsn_markov_chain.png>
@@ -770,9 +811,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <C:/Users/marku_000/Documents/GitHub/Thesis/images/gsn_computational_graph.
-png> <C:/Users/marku_000/Documents/GitHub/Thesis/images/gsn_markov_chain.png>]
-<images/mixing_problem.png, id=113, 680.5425pt x 437.38406pt>
+[17 <./images/gsn_computational_graph.png> <./images/gsn_markov_chain.png>]
+<images/mixing_problem.png, id=114, 680.5425pt x 437.38406pt>
 File: images/mixing_problem.png Graphic file (type png)
 
 <use images/mixing_problem.png>
@@ -785,7 +825,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <C:/Users/marku_000/Documents/GitHub/Thesis/images/mixing_problem.png>])
+[18 <./images/mixing_problem.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -794,10 +834,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 Chapter 5.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/model1.tex [20
+(./chapters/model1.tex [20
 
 ]
-<images/gsn_samples.png, id=123, 562.1pt x 562.1pt>
+<images/gsn_samples.png, id=124, 562.1pt x 562.1pt>
 File: images/gsn_samples.png Graphic file (type png)
 
 <use images/gsn_samples.png>
@@ -810,15 +850,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21 <C:/Users/marku_000/Documents/GitHub/Thesis/images/gsn_samples.png (PNG cop
-y)>]
+[21 <./images/gsn_samples.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] <images/story1_reconstruction.png, id=131, 1124.2pt x 320.19624pt>
+[22] <images/story1_reconstruction.png, id=132, 1124.2pt x 320.19624pt>
 File: images/story1_reconstruction.png Graphic file (type png)
 
 <use images/story1_reconstruction.png>
@@ -826,7 +865,7 @@ Package pdftex.def Info: images/story1_reconstruction.png used on input line 56
 .
 (pdftex.def)             Requested size: 416.83289pt x 118.71992pt.
 
-<images/average_mnist_train.png, id=132, 281.05pt x 28.105pt>
+<images/average_mnist_train.png, id=133, 281.05pt x 28.105pt>
 File: images/average_mnist_train.png Graphic file (type png)
 
 <use images/average_mnist_train.png>
@@ -839,9 +878,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story1_reconstruction.pn
-g> <C:/Users/marku_000/Documents/GitHub/Thesis/images/average_mnist_train.png (
-PNG copy)>] <images/story1_samples_100.png, id=137, 562.1pt x 562.1pt>
+[23 <./images/story1_reconstruction.png> <./images/average_mnist_train.png (PNG
+ copy)>] <images/story1_samples_100.png, id=138, 562.1pt x 562.1pt>
 File: images/story1_samples_100.png Graphic file (type png)
 
 <use images/story1_samples_100.png>
@@ -854,10 +892,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story1_samples_100.png (
-PNG copy)>]
+[24 <./images/story1_samples_100.png (PNG copy)>]
 Chapter 6.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/model2.tex [25
+(./chapters/model2.tex [25
 
 ]
 
@@ -866,7 +903,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <images/story2_reconstruction.png, id=147, 1124.2pt x 318.18875pt>
+[26] <images/story2_reconstruction.png, id=148, 1124.2pt x 318.18875pt>
 File: images/story2_reconstruction.png Graphic file (type png)
 
 <use images/story2_reconstruction.png>
@@ -874,7 +911,7 @@ Package pdftex.def Info: images/story2_reconstruction.png used on input line 32
 .
 (pdftex.def)             Requested size: 416.83289pt x 117.9756pt.
 
-<images/story2_samples_300.png, id=148, 562.1pt x 562.1pt>
+<images/story2_samples_300.png, id=149, 562.1pt x 562.1pt>
 File: images/story2_samples_300.png Graphic file (type png)
 
 <use images/story2_samples_300.png>
@@ -895,16 +932,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story2_reconstruction.pn
-g>])
+[27 <./images/story2_reconstruction.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story2_samples_300.png (
-PNG copy)>]
+[28 <./images/story2_samples_300.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -913,7 +948,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 Chapter 7.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/model3.tex [30
+(./chapters/model3.tex [30
 
 ]
 
@@ -922,7 +957,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] <images/story3_reconstruction.png, id=166, 1124.2pt x 281.05pt>
+[31] <images/story3_reconstruction.png, id=167, 1124.2pt x 281.05pt>
 File: images/story3_reconstruction.png Graphic file (type png)
 
 <use images/story3_reconstruction.png>
@@ -930,7 +965,7 @@ Package pdftex.def Info: images/story3_reconstruction.png used on input line 32
 .
 (pdftex.def)             Requested size: 416.83289pt x 104.20557pt.
 
-<images/story3_samples_170.png, id=167, 562.1pt x 562.1pt>
+<images/story3_samples_170.png, id=168, 562.1pt x 562.1pt>
 File: images/story3_samples_170.png Graphic file (type png)
 
 <use images/story3_samples_170.png>
@@ -946,25 +981,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story3_reconstruction.pn
-g (PNG copy)>]
+[32 <./images/story3_reconstruction.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <C:/Users/marku_000/Documents/GitHub/Thesis/images/story3_samples_170.png (
-PNG copy)>]
+[33 <./images/story3_samples_170.png (PNG copy)>]
 Chapter 8.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/discussion.tex
+(./chapters/discussion.tex
 Underfull \hbox (badness 10000) in alignment at lines 4--10
 [][][][][]
  []
 
 [34
 
-] <images/rnnrbm_samples.png, id=178, 562.1pt x 562.1pt>
+] <images/rnnrbm_samples.png, id=179, 562.1pt x 562.1pt>
 File: images/rnnrbm_samples.png Graphic file (type png)
 
 <use images/rnnrbm_samples.png>
@@ -977,13 +1010,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <C:/Users/marku_000/Documents/GitHub/Thesis/images/rnnrbm_samples.png (PNG 
-copy)>]
+[35 <./images/rnnrbm_samples.png (PNG copy)>]
 Chapter 9.
-(C:\Users\marku_000\Documents\GitHub\Thesis\chapters/conclusion.tex) [36
+(./chapters/conclusion.tex) [36
 
-]
-(C:\Users\marku_000\Documents\GitHub\Thesis\main.bbl
+] (./main.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1006,33 +1037,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40] (C:\Users\marku_000\Documents\GitHub\Thesis\main.aux) ) 
+[40] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4768 strings out of 493921
- 67907 string characters out of 3144864
- 155065 words of memory out of 3000000
- 7957 multiletter control sequences out of 15000+200000
- 10274 words of font info for 37 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 33i,14n,43p,2062b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmti12.pfb>
-Output written on main.pdf (49 pages, 1543176 bytes).
+ 5106 strings out of 493117
+ 72479 string characters out of 6135433
+ 168989 words of memory out of 5000000
+ 8440 multiletter control sequences out of 15000+600000
+ 10274 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,14n,43p,2019b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (49 pages, 1553417 bytes).
 PDF statistics:
- 244 PDF objects out of 1000 (max. 8388607)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

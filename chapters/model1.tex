@@ -22,7 +22,7 @@ To learn transitions between sequential modes in the input space, both  the \(t\
 
 \section{Algorithm}
 
-This model's algorithm is similar to expectation maximization (EM) - first optimizing GSN parameters over the input data, then learning the transition \(H \rightarrow H\) parameters, and repeating. After the initial GSN pass over the data, training the GSN parameters becomes more powerful as the reconstruction cost of the current input as well as the next predicted input are both used for computing the gradients.
+This model's training algorithm is similar to expectation maximization (EM) - first optimizing GSN parameters over the input data, then learning the transition \(H \rightarrow H\) parameters, and repeating. After the initial GSN pass over the data, training the GSN parameters becomes more powerful as the reconstruction cost of the current input as well as the next predicted input are both used for computing the gradients.
 
 \begin{algorithm}[h!]
 	\KwIn{training set \(D\) of examples \(X\) in sequential order, \(N\) layers, \(k\) walkbacks}

@@ -11,16 +11,16 @@
 \contentsline {subsection}{\numberline {4.1.1}Easing restrictive conditions on the denoising auto-encoder}{16}
 \contentsline {subsection}{\numberline {4.1.2}Generalizing to GSN}{16}
 \contentsline {section}{\numberline {4.2}Extension to recurrent deep GSN}{18}
-\contentsline {chapter}{\numberline {5}Model 1: Expectation Maximization method for training a recurrent deep GSN}{20}
+\contentsline {chapter}{\numberline {5}Model 1: Temporal GSN (TGSN)}{20}
 \contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{21}
 \contentsline {section}{\numberline {5.2}Algorithm}{22}
 \contentsline {section}{\numberline {5.3}Experimental results}{23}
-\contentsline {chapter}{\numberline {6}Model 2: Online method for training a recurrent deep GSN}{25}
+\contentsline {chapter}{\numberline {6}Model 2: Recurrent GSN (RNN-GSN)}{25}
 \contentsline {section}{\numberline {6.1}Online learning with real-sequenced data }{25}
 \contentsline {section}{\numberline {6.2}Algorithm}{26}
 \contentsline {section}{\numberline {6.3}Results}{27}
 \contentsline {section}{\numberline {6.4}Extending the walkback procedure to sequenced inputs}{28}
-\contentsline {chapter}{\numberline {7}Model 3: Hybrid method for training a recurrent deep GSN}{30}
+\contentsline {chapter}{\numberline {7}Model 3: Recurrent Temporal GSN (RT-GSN)}{30}
 \contentsline {section}{\numberline {7.1}Generalizing the EM model}{30}
 \contentsline {section}{\numberline {7.2}Algorithm}{31}
 \contentsline {section}{\numberline {7.3}Experimental results}{31}

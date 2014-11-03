@@ -5,7 +5,7 @@ Deep learning frameworks (also known as deep architectures) move in this directi
 
 The central idea to building a deep architecture is to learn a hierarchy of features one level at a time where the input to one computational level is the output of the previous level for an arbitrary number of levels. Otherwise, shallow representations (such as regression or support vector machines) go directly from input data to output classification.
 
-One good analogue for deep architectures is neurons in the brain (a motivation for artificial neural networks) - the output of a group of neurons is agglomerated as the input to more neurons to form a hierarchical layer structure. Each layer \(N\) is composed of \(h\) computational nodes that connect to each computational node in layer \(N+1\).
+One loose analogue for deep architectures is neurons in the brain (a motivation for artificial neural networks) - the output of a group of neurons is agglomerated as the input to more neurons to form a hierarchical layer structure. Each layer \(N\) is composed of \(h\) computational nodes that connect to each computational node in layer \(N+1\).
 
 \begin{figure}[h!]
   \centering
@@ -78,11 +78,11 @@ There are a few drawbacks to the probabilistic approach to deep architectures:
 
 \subsection{Direct encoding models: auto-encoder}
 To get around the problem of deriving useful feature values, an auto-encoder is a non-probabilistic alternative approach to deep learning where the hidden units produce usable numeric feature values. An auto-encoder directly maps an input \(x\) to a hidden layer \(h\) through a parameterized closed-form equation called an encoder. Typically, this encoder function is a nonlinear transformation of the input to \(h\) in the form:
-\[f_\Theta (x) = s_f (b + Wx)\]
+\[f_\Theta (x) = s_f (Wx + b)\]
 
 This resulting transformation is the feature-vector or representation computed from input \(x\).
 Conversely, a decoder function is then used to map from this feature space \(h\) back to the input space, which results in a reconstruction \(x'\). This decoder is also a parameterized closed-form equation that is a nonlinear function undoing the encoding function:
-\[g_\Theta (h) = s_g (d + W' h)\]
+\[g_\Theta (h) = s_g (W' h + d)\]
 
 In both cases, the nonlinear function s is normally an element-wise sigmoid, hyperbolic tangent nonlinearity, or rectifier linear unit.
 

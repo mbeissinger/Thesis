@@ -1,2 +1,31 @@
-Both the EM and online learning methods for training the recurrent deep GSN have their drawbacks - EM only models the sequence linearly in the latent variable \(H\) space while the online learning method requires untied weights between layers. This model, the hybrid approach, aims to combine the best of both worlds by creating an alternating structure inspired by convolutional neural networks with alternating convolutional and pooling layers \cite{lenet5}.
+The TGSN and RNN-GSN models have shown the advantage so far by decoupling input representation from sequence representation. However, the sequence complexity learned still has a limit by the RNN representation capacity over the input latent space. We can generalize this decoupling idea even further by creating an alternating structure with these input representation and sequence representation layers, inspired by convolutional neural networks with alternating convolutional and dimensionality reduction layers \cite{lenet5}. The Sequence Encoder Network (SEN) is able to stack these input and sequence representational layers to learn representations of the sequence dynamics across many layers to enable a much higher capacity for complex inputs.
 
+\section{Algorithm}
+The SEN algorithm extends the RNN-GSN by continuing to learn representations on top of the sequence representations \(V\): 
+\begin{enumerate}
+\item Use a GSN to learn the generative input representation \(H^0\) of the input \(X\)
+\item Use an RNN to learn the sequence representation \(V^0\) over \(H^0\)
+\item Use another GSN to learn \(H^1\) over the sequence representations \(V^0\)
+\item Use another RNN to \(V^1\) over \(H^1\)
+\item Repeat for desired representation layers \(n\) to get top-level sequence representations \(V^n\)
+\end{enumerate}
+
+Intuitively, these extra layers enable the network to represent hierarchical sequence dynamics from learning transitions between sequence representation states. This hierarchical property allows for much longer or more complex time series interactions.
+
+Because we are stacking the RNN-GSN layers, the EM approach for training reconstruction and sequences separately would take layerwise pretraining. For the SEN, we are going to combine the forward pass and train both the reconstruction GSN parameters and sequence RNN parameters at the same time.
+
+ \begin{algorithm}[h!]
+	\KwIn{training data \(X\) from a sequential distribution \(D\)}
+	Initialize reconstruction GSN parameters \(\Theta_{gsn_n} = \) \{List(weights from one layer to the next), List(bias for layer))\} for desired layers \(n\)\;
+	Initialize transition RNN parameters \(\Theta_{rnn_n} = \) \{List(weights from one layer to the next higher), List(weights from one layer to the next lower), List(bias for layer))\} for desired layers \(n\)\;
+	\While{training not converged}{
+		\For{each input \(X\)}{
+			Run \(X\) through the SEN, creating \(H^0\) to \(H^n\) \(n*(H^i, H`^i)\) reconstruction pairs, and \(H_{t+1}^n\) expected next hiddens from the RNNs \(V^n\)\;
+			Calculate the reconstruction loss for \(H\) and prediction loss for \(V\).		}
+	}
+	\caption{ SEN Algorithm }
+\end{algorithm}
+
+\section{Experimental setup}
+
+We stacked two RNN-GSNs with the same layers and noise as in Chapter 6. The SEN is still training on sequenced MNIST as well as the experiments in Discussion...

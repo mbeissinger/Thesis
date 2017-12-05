@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  4 DEC 2017 17:06
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015) (rev 5238)  (format=lualatex 2015.5.24)  4 DEC 2017 19:08
  restricted \write18 enabled.
  file:line:error style messages enabled.
 **main.tex
@@ -734,6 +734,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27<./images/story2_reconstruction.png>]
+Overfull \hbox (30.70477pt too wide) in paragraph at lines 56--56
+[][]\OT1/cmr/bx/n/17.28 RNN-GSN: Gen-er-al-iz-ing the EM train-ing model
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -754,7 +758,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/story3_reconstruction.png Graphic file (type png)
 
 <use images/story3_reconstruction.png>
-Package pdftex.def Info: images/story3_reconstruction.png used on input line 85.
+Package pdftex.def Info: images/story3_reconstruction.png used on input line 83.
 
 (pdftex.def)             Requested size: 416.83289pt x 104.20557pt.
 
@@ -762,12 +766,13 @@ Package pdftex.def Info: images/story3_reconstruction.png used on input line 85.
 File: images/story3_samples_170.png Graphic file (type png)
 
 <use images/story3_samples_170.png>
-Package pdftex.def Info: images/story3_samples_170.png used on input line 92.
+Package pdftex.def Info: images/story3_samples_170.png used on input line 89.
 (pdftex.def)             Requested size: 333.46758pt x 333.46301pt.
-)
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -783,16 +788,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [31<./images/story3_samples_170.png>]
 Chapter 7.
-(./chapters/model3.tex) [32
+(./chapters/model3.tex [32
 
-]
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
 Chapter 8.
 (./chapters/discussion.tex
 Overfull \hbox (27.4709pt too wide) in paragraph at lines 3--3
 [][]\OT1/cmr/bx/n/17.28 Sam-ples from RNN-RBM on se-quenced MNIST 
  []
 
-<images/rnnrbm_samples.png, id=169, 562.1pt x 562.1pt>
+<images/rnnrbm_samples.png, id=172, 562.1pt x 562.1pt>
 File: images/rnnrbm_samples.png Graphic file (type png)
 
 <use images/rnnrbm_samples.png>
@@ -802,23 +814,23 @@ Package pdftex.def Info: images/rnnrbm_samples.png used on input line 9.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[34
 
+]
 Underfull \hbox (badness 10000) in alignment at lines 22--34
 [][][][][]
  []
 
-[33
-
-])
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34<./images/rnnrbm_samples.png>]
+[35<./images/rnnrbm_samples.png>]
 Chapter 9.
-(./chapters/conclusion.tex) [35
+(./chapters/conclusion.tex) [36
 
 ] (./main.bbl
 
@@ -827,7 +839,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] [37
+[37] [38
 
 ]
 
@@ -836,21 +848,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38])
+[39])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] (./main.aux))
+[40] (./main.aux))
 
 Here is how much of LuaTeX's memory you used:
  5338 strings out of 494693
  100000,184870 words of node,token memory allocated
- 526 words of node memory still in use:
+ 529 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 58 glue_spec, 1 write nodes
-   avail lists: 1:1,2:21,3:217,4:840,5:199,6:3149,7:94,9:213,10:304
+   avail lists: 1:1,2:21,3:220,4:837,5:200,6:3149,7:94,9:213,10:304
  8591 multiletter control sequences out of 65536+600000
  49 fonts using 1936327 bytes
  37i,14n,43p,1351b,416s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -868,10 +880,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><</usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><</usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><</usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (48 pages, 1522136 bytes).
+Output written on main.pdf (49 pages, 1525187 bytes).
 
-PDF statistics: 237 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+PDF statistics: 240 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

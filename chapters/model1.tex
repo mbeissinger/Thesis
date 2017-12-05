@@ -1,4 +1,4 @@
-This first approach is most similar to Sequential Deep Belief Networks in that it learns a transition operator between hidden latent states \(H\). This model uses the power of GSN's to learn hidden representations that vastly reduce the complexity of the input data space, making transitions between data manifolds at higher layers of representation much easier to model. Therefore, the transition step of learning \(H \rightarrow H\) over time should be less complicated (i.e. only needing a single linear regression step between hidden states). This model trains by alternating over two versions of the dataset:
+This first approach is most similar to Sequential Deep Belief Networks in that it learns a transition operator between hidden latent states \(H\). This model uses the power of GSN's to learn hidden representations that reduce the complexity of the input data space, making transitions between data manifolds at higher layers of representation much easier to model. Therefore, the transition step of learning \(H \rightarrow H\) over time should be less complicated (i.e. only needing a single linear regression step between hidden states). This model trains by alternating over two versions of the dataset:
 \begin{enumerate}
 \item A generative Gibbs sampling pass for \(k\) samples on each input in arbitrary order (for the GSN to learn the data manifolds)
 \item A real time-sequenced order of the input to learn the regression \(H \rightarrow H\)
@@ -17,17 +17,19 @@ While GSNs are inherently recurrent and depend on the previous latent and visibl
 \caption{Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}
 \end{figure}
 
-To learn transitions between sequential modes in the input space, both  the \(t\) from the GSN sampling process and the sequential \(t_{real}\) from the input data sequence need to be utilized.
+To learn transitions between sequential modes in the input space, both the sample step \(t\) from the GSN sampling process and the sequential input \(t_{real}\) from the input data sequence need to be utilized.
 
 
 \section{Algorithm}
 
 This model's training algorithm is similar to expectation maximization (EM) - first optimizing GSN parameters over the input data, then learning the transition \(H \rightarrow H\) parameters, and repeating. After the initial GSN pass over the data, training the GSN parameters becomes more powerful as the reconstruction cost of the current input as well as the next predicted input are both used for computing the gradients.
 
+One difficulty with this training setup is that the first few epochs will have the reconstruction cost after predicting the transition operator be incorrect until the GSN parameters are warmed up. The GSNs converge slowly and can get stuck in bad configurations due to the regression step (which is simple linear regression) being trained on a not-yet-useful hidden representation of the complex input data. If the regression step is trained poorly, it affects the remaining GSN parameter training steps by providing bad sequential predictions for the GSN to attempt to reconstruct. In practice we recommend waiting until the GSN reconstruction cost starts to converge before applying the reconstruction cost of the predicted next step to the GSN training operation.
+
 \begin{algorithm}[h!]
 	\KwIn{training set \(D\) of examples \(X\) in sequential order, \(N\) layers, \(k\) walkbacks}
 	Initialize GSN parameters \(\Theta_{GSN} = \) \{List(weights from one layer to the next), List(bias for layer))\}\;
-	Initialize transition parameters \(\Theta_{transition}=\) \{List(identity matrix for layer), List(bias for layer)\} \;
+	Initialize transition parameters \(\Theta_{transition}=\) \{List(weights from previous layer to current), List(bias for layer)\} \;
 	\While{training not converged}{
 		\For{each input \(X\)}{
 			Sample GSN for \(k\) walkbacks, creating \(k^*(X,X_{recon})\) training pairs\;
@@ -45,11 +47,11 @@ This model's training algorithm is similar to expectation maximization (EM) - fi
 	\caption{ Model 1 EM Algorithm }
 \end{algorithm}
 
-\section{Experimental results}
+\section{Experimental setup}
 
-This algorithm was tested on artificially sequenced MNIST handwritten digit data. The dataset was sequenced by ordering the inputs 0-9 repeating. The GSN uses hyperbolic tangent (tanh) activation with 3 hidden layers of 1500 nodes and sigmoidal activation for the visible layer. For the GSN, Gaussian noise is added pre- and post-activation with a mean of 0 and a sigma of 2, and input corruption noise is salt-and-pepper. Training was performed for 300 iterations over the input data using a batch size of 100, with a learning rate of 0.25, annealing rate of 0.995, and momentum of 0.5.
+This algorithm was tested on artificially sequenced MNIST handwritten digit data. The dataset was sequenced by ordering the inputs 0-9 repeating. The GSN uses hyperbolic tangent (tanh) activation with 3 hidden layers of 1500 nodes and sigmoidal activation for the visible layer. For the GSN, Gaussian noise is added pre- and post-activation with a mean of 0 and a sigma of 2, and input corruption noise is salt-and-pepper with p=0.4. Training was performed for 300 iterations over the input data using a batch size of 100, with a learning rate of 0.25, annealing rate of 0.995, and momentum of 0.5.
 
-This model achieved a binary cross-entropy of 0.1651 for reconstructing the current input  and 0.2317 for reconstructing the predicted next input after 300 epochs. An interesting result is that the predicted reconstruction of the next digits appears to be close to the average of that digit, which makes sense given the training set was shuffled and re-ordered after every epoch.
+This model achieved a binary cross-entropy of 0.1651 for reconstructing the current input  and 0.2317 for reconstructing the predicted next input after 300 epochs. An interesting result is that the predicted reconstruction of the next digits appears to be close to the average of that digit, which can be explained because the training set of sequences was shuffled and re-ordered after every epoch from the pool of available digits.
 
 \begin{figure}[h!]
   \centering

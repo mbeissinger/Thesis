@@ -14,15 +14,17 @@
 \contentsline {chapter}{\numberline {5}Model 1: Temporal GSN (TGSN)}{20}
 \contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{21}
 \contentsline {section}{\numberline {5.2}Algorithm}{22}
-\contentsline {section}{\numberline {5.3}Experimental results}{23}
+\contentsline {section}{\numberline {5.3}Experimental setup}{22}
 \contentsline {chapter}{\numberline {6}Model 2: Recurrent GSN (RNN-GSN)}{25}
-\contentsline {section}{\numberline {6.1}Online learning with real-sequenced data }{25}
-\contentsline {section}{\numberline {6.2}Algorithm}{26}
-\contentsline {section}{\numberline {6.3}Results}{27}
-\contentsline {section}{\numberline {6.4}Extending the walkback procedure to sequenced inputs}{28}
-\contentsline {chapter}{\numberline {7}Model 3: Recurrent Temporal GSN (RT-GSN)}{30}
-\contentsline {section}{\numberline {7.1}Generalizing the EM model}{30}
-\contentsline {section}{\numberline {7.2}Algorithm}{31}
-\contentsline {section}{\numberline {7.3}Experimental results}{31}
-\contentsline {chapter}{\numberline {8}Discussion of Results}{34}
-\contentsline {chapter}{\numberline {9}Conclusion}{36}
+\contentsline {section}{\numberline {6.1}Aside: GSN as a recurrent network}{25}
+\contentsline {subsection}{\numberline {6.1.1}Untied GSN on sequenced MNIST}{26}
+\contentsline {section}{\numberline {6.2}Extending the walkback procedure to sequenced inputs}{27}
+\contentsline {section}{\numberline {6.3}Generalizing the EM model}{29}
+\contentsline {section}{\numberline {6.4}Algorithm}{29}
+\contentsline {section}{\numberline {6.5}Experimental setup}{29}
+\contentsline {chapter}{\numberline {7}Model 3: Sequence Encoder Network (SEN)}{32}
+\contentsline {chapter}{\numberline {8}Discussion of Results}{33}
+\contentsline {section}{\numberline {8.1}Samples from RNN-RBM on sequenced MNIST}{33}
+\contentsline {section}{\numberline {8.2}Bouncing balls videos dataset}{33}
+\contentsline {section}{\numberline {8.3}CMU motion capture dataset}{34}
+\contentsline {chapter}{\numberline {9}Conclusion}{35}

@@ -1,14 +1,9 @@
-While Model 1 works well predicting the next input digit given the current one, it is limited to working over the entire dataset to first train the GSN and then again to train the regression step (repeating until convergence). Sequential data, however, often requires an online learning method when the entire dataset is not available and must be collected sequentially, while both training and providing predictions as data arrives.
+While the Temporal GSN (TGSN) works well predicting the next input digit given the current one, it is limited by its regression transition operators learning a linear mapping \(H \rightarrow H\) of a given context window. This inherently limits the length and complexity of sequences learnable in the latent space. The Recurrent GSN in this chapter introduces an additional recurrent latent parameter \(V\) to learn the sequence of GSN \(H\)s over time to tackle this problem with the TGSN.
 
-\section{Online learning with real-sequenced data }
-The GSNs of Model 1 can be learned in a quasi-online manner: for each sequential group of inputs, perform a GSN training update after \(k\) walkbacks, and then update the regression parameters. However, when updating on an individual input level, these sequential GSNs converge slowly and can get stuck in bad configurations due to the regression step (which is simple linear regression) being trained on a not-yet-useful hidden representation of the complex input data. If the regression step is trained poorly, it affects the remaining GSN parameter training steps by providing bad sequential predictions for the GSN to attempt to reconstruct.
+\section{Aside: GSN as a recurrent network}
+As Section 5.1 shows, GSNs inherently have a recurrent structure when the Gibbs chain is unrolled. Instead of using Gibbs sampling to generate inputs of the same class, a GSN can use the real time sequence of the input data to train its parameters with respect to the predicted reconstruction of the next input in the sequence. The GSN becomes a generative sequence prediction model rather than a generative data distribution model. This approach is not without drawbacks - the GSN loses its ability to utilize the walkback training principle for creating robust representations by actively seeking out spurious modes in the model. However, this drawback is mitigated with more input data.  Further, the GSN loses the ability to mix between modes of the input space. Instead, it mixes between modes of the sequence space - learning to transition to the next most likely input given the current and previous data.
 
-The main claim for Model 2 is that GSNs can learn a complex hidden representation \(H\) that encodes sequences inherent to the input data. Instead of using Gibbs sampling to generate inputs of the same class, a GSN can use the real time sequence of the input data to train its parameters with respect to the predicted reconstruction of the next input in the sequence. The GSN becomes a generative sequence prediction model rather than a generative data distribution model. This approach is not without drawbacks - the GSN loses its ability to utilize the walkback training principle for creating robust representations by actively seeking out spurious modes in the model. However, this drawback is mitigated with more input data.  Further, the GSN loses the ability to mix between modes of the input space. Instead, it mixes between modes of the sequence space - learning to transition to the next most likely input given the current and previous data.
-
-
-\section{Algorithm}
-
-Currently, GSNs use tied weights between layers to make backpropagation easier. However, this approach prohibits the hidden representation from being able to encode sequences. The online learning method must untie these weights, which makes training more difficult.
+Currently, GSNs use tied weights between layers to make backpropagation easier. However, this approach prohibits the hidden representation from being able to encode sequences. We must untie these weights to consider a GSN as an RNN variant, which makes training more difficult.
 
 \begin{algorithm}[h!]
 	\KwIn{training data \(X\) in sequential order, \(N\) layers, \(k \geq 2*N\) predictions}
@@ -18,28 +13,30 @@ Currently, GSNs use tied weights between layers to make backpropagation easier. 
 		Store these predictions in a memory buffer array of lists\;
 		Use the current input \(x\) to train GSN parameters with respect to the list of predicted \(x'\) through backpropagation\;
 	}
-	\caption{ Model 2 Online Algorithm }
+	\caption{ Untied GSN as an RNN }
 \end{algorithm}
 
-\section{Results}
+\subsection{Untied GSN on sequenced MNIST}
 
-Using the same general training parameters with regards to noise, learning rate, annealing, momentum, epochs, hidden layers, and activation as Model 1, Model 2 performs similarly with regards to binary cross-entropy as Model 1 on the artificially sequenced MNIST dataset. For the next immediate predicted number, it achieved a binary cross-entropy of 0.2318.  For the predicted number six iterations ahead, it achieved a binary cross-entropy of 0.2268. This cross-entropy is lower because six iterations ahead can utilize higher layers of representation in the GSN due to the way the computational graph is formed.
+Using the same general training parameters with regards to noise, learning rate, annealing, momentum, epochs, hidden layers, and activation as the TGSN, untying the GSN parameters performs similarly with regards to binary cross-entropy as the TGSN on the artificially sequenced MNIST dataset. For the next immediate predicted number, it achieved a binary cross-entropy of 0.2318.  For the predicted number six iterations ahead, it achieved a binary cross-entropy of 0.2268. This cross-entropy is lower because six iterations ahead can utilize higher layers of representation in the GSN due to the way the computational graph is formed.
 
-Even though cross-entropy is similar to Model 1, reconstruction images paint a different picture. Due to untied weights taking longer to train, the next predicted digits looks less refined than the averages produced from Model 1 over the same number of iterations. However, as the number of predictions ahead increases, the digits begin to look more like the averages. This could be explained by further predictions ahead utilizing the higher layers of representation based on the way the computational graph is formed.
+Even though cross-entropy is similar to the TGSN, reconstruction images paint a different picture. Due to untied weights taking longer to train, the next predicted digits appear worse than the averages produced from the TGSN over the same number of iterations. However, as the number of predictions ahead increases, the digits begin to look more like the averages. This could be explained by further predictions ahead utilizing the higher layers of representation based on the way the computational graph is formed.
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=1.0\textwidth]{story2_reconstruction}
-\caption{Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}
+\caption{Untied GSN reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}
 \end{figure}
 
-Learning with untied weights is much slower, but still provides evidence that the hidden layers themselves can learn useful representations for complex input sequences. Looking at the generated samples after 300 training iterations, mixing between sequential modes is evident as the samples appear to be generated in the same 0-9 order as the sequenced data:
+Learning with untied weights is much slower, but still provides evidence that the hidden layers themselves can learn useful representations for complex input sequences. Looking at the generated samples in Figure 6.2 after 300 training iterations, mixing between sequential modes is evident as the samples appear to be generated in the same 0-9 order as the sequenced data.
+
 \begin{figure}[h!]
   \centering
     \includegraphics[width=.8\textwidth]{story2_samples_300}
-\caption{Model 2 sampling after 300 iterations.}
+\caption{Untied GSN sampling after 300 iterations.}
 \end{figure}
 
+A baseline LSTM network is compared to this untied GSN in the Discussion. However, the quality of images shown here encourage the use of separate parameters to decouple sequential learning from input representation learning.
 
 \section{Extending the walkback procedure to sequenced inputs}
 
@@ -55,3 +52,43 @@ The general process for creating sequential walkbacks described here is as follo
 	}
 	\caption{ Walkbacks for sequential input }
 \end{algorithm}
+
+\section{Generalizing the EM model}
+The EM model is easier to train and appears to have better mixing in both the input and sequence spaces compared to the online learning model. However, due to the simple regression step, it is unable to represent complex sequences in the representation space. A more general model is necessary to encode complex data in both input and representation spaces.
+
+Ultimately, this model generalizes Model 1 by alternating between finding a good representation for inputs and a good representation for sequences. This way, the GSNs can optimize specifically for reconstruction or prediction rather than making the hidden representation learn both. Further, by making the sequence prediction GSN layer recurrent over the top layer of the input reconstruction GSN layer, this system can learn complex, nonlinear sequence representations over the modes of the input space, capturing a very large possibility of sequential data distributions. These two specified layers can then be repeated to form deep, generalized representations of sequential data.
+
+
+\section{Algorithm}
+This algorithm also alternates between training the reconstruction GSN parameters and prediction GSN for transitions.
+ \begin{algorithm}[h!]
+	\KwIn{training data \(X\) from a sequential distribution \(D\)}
+	Initialize reconstruction GSN parameters \(\Theta_{reconstruction} = \) \{List(weights from one layer to the next), List(bias for layer))\}\;
+	Initialize transition GSN parameters \(\Theta_{transition} = \) \{List(weights from one layer to the next higher), List(weights from on layer to the next lower), List(bias for layer))\}\;
+	\While{training not converged}{
+		\For{each input \(X\)}{
+			Sample from reconstruction GSN with walkback using \(X\) to create \((X_{recon},X)\) pairs for training parameters \(\Theta_{reconstruction}\)\;
+			Sample from transition GSN using the hidden representations \(H\) from the reconstruciton GSN on the input \(X\)\;
+			Store the predicted next hidden representations \(H'\) and use them with sampling from the next reconstruction GSN to train the transition parameters \(\Theta_{transition}\)\;
+			Perform sequential walkback training on the transition GSN\;
+		}
+	}
+	\caption{ Model 3 Hybrid  Recurrent Deep GSN Algorithm }
+\end{algorithm}
+
+
+\section{Experimental setup}
+The RNN-GSN uses the same general training parameters with regards to noise, learning rate, annealing, momentum, epochs, hidden layers, and activation as the TGSN. In addition, it has one recurrent hidden layer of 3000 units, receiving input from layer 1 and layer 3 of the GSN below it. No sequential walkback steps were performed. Model 3 performed worse with regards to binary cross-entropy of the predicted reconstruction than the TGSN (achieving a score of 0.2695, with the current reconstruction achieving a score of 0.1669). However, the reconstruction and predicted reconstruction after 300 training iterations qualitatively looks like the model is learning the correct sequence. Further, because of the additional recurrent layer and parameters, this model should take longer to train and slower progress to sequence prediction is expected. Further study of this general model should be with hyper-parameter optimization and more training epochs.
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=1.0\textwidth]{story3_reconstruction}
+\caption{RNN-GSN reconstruction of current digits and predicted next digits after 300 iterations.}
+\end{figure}
+
+The sampling is only pulled from the first GSN layer, so it looks similar to the TGSN with regards to mixing between modes of the input space.
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=.8\textwidth]{story3_samples_170}
+\caption{RNN-GSN sampling after 300 iterations.}
+\end{figure}

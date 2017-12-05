@@ -72,41 +72,45 @@
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{21}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}}{21}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Algorithm}{22}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces  Model 1 EM Algorithm }}{22}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Experimental results}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Average MNIST training data by digit.}}{23}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Experimental setup}{22}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces  Model 1 EM Algorithm }}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Average MNIST training data by digit.}}{24}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Model 1 sampling after 90 training iterations; smooth mixing between major modes.}}{24}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {6}Model 2: Recurrent GSN (RNN-GSN)}{25}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Online learning with real-sequenced data }{25}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Algorithm}{26}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces  Model 2 Online Algorithm }}{26}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Results}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Model 2 reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{28}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Extending the walkback procedure to sequenced inputs}{28}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces  Walkbacks for sequential input }}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Aside: GSN as a recurrent network}{25}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces  Untied GSN as an RNN }}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Untied GSN on sequenced MNIST}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Untied GSN reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Extending the walkback procedure to sequenced inputs}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Untied GSN sampling after 300 iterations.}}{28}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces  Walkbacks for sequential input }}{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Generalizing the EM model}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Algorithm}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Experimental setup}{29}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {6}{\ignorespaces  Model 3 Hybrid Recurrent Deep GSN Algorithm }}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces RNN-GSN reconstruction of current digits and predicted next digits after 300 iterations.}}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces RNN-GSN sampling after 300 iterations.}}{31}}
 \citation{lenet5}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Model 3: Recurrent Temporal GSN (RT-GSN)}{30}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Model 3: Sequence Encoder Network (SEN)}{32}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Generalizing the EM model}{30}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Algorithm}{31}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {6}{\ignorespaces  Model 3 Hybrid Recurrent Deep GSN Algorithm }}{31}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Experimental results}{31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Model 3 reconstruction of current digits and predicted next digits after 300 iterations.}}{32}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Model 2 sampling after 300 iterations.}}{33}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Discussion of Results}{34}}
+\citation{lewandowski12}
+\citation{sutskever08}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Discussion of Results}{33}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces Binary cross-entropy of the predicted sequence reconstruction comparison of the 3 models and an RNN-RBM on artificially sequenced (0-9 repeating) MNIST data.}}{34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{35}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion}{36}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Samples from RNN-RBM on sequenced MNIST}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Bouncing balls videos dataset}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{34}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}CMU motion capture dataset}{34}}
+\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces Mean squared prediction error on bouncing balls videos and motion capture data. RTRBM and RNN-RBM numbers from [10]}}{34}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion}{35}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}

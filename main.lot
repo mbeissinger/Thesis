@@ -6,5 +6,5 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Binary cross-entropy of the predicted sequence reconstruction comparison of the 3 models and an RNN-RBM on artificially sequenced (0-9 repeating) MNIST data.}}{34}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Mean squared prediction error on bouncing balls videos and motion capture data. RTRBM and RNN-RBM numbers from [10]}}{34}
 \addvspace {10\p@ }

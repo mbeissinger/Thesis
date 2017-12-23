@@ -12,15 +12,21 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Better mixing via deep architectures \cite {bengio_workshop}.}}{18}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Samples from GSN after 290 training epochs. Good mixing between major modes in the input space.}}{21}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{24}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Average MNIST training data by digit.}}{24}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Model 1 sampling after 90 training iterations; smooth mixing between major modes.}}{24}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Temporal GSN architecture.}}{22}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Model 1 reconstruction of digits and predicted next digits after 300 iterations.}}{24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Average MNIST training data by digit.}}{24}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Model 1 sampling after 90 training iterations; smooth mixing between major modes.}}{25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Untied GSN reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{27}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Untied GSN sampling after 300 iterations.}}{28}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces RNN-GSN reconstruction of current digits and predicted next digits after 300 iterations.}}{30}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces RNN-GSN sampling after 300 iterations.}}{31}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Untied GSN reconstruction of predicted next digits and predicted digits 3 iterations ahead after 300 iterations.}}{28}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Untied GSN sampling after 300 iterations.}}{29}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Recurrent GSN architecture. H is GSN hiddens, V is RNN hiddens.}}{30}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces RNN-GSN reconstruction of current digits and predicted next digits after 300 iterations.}}{32}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces RNN-GSN sampling after 300 iterations.}}{32}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Sequence Encoder Network architecture. H is GSN hiddens, V is RNN hiddens.}}{34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{35}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces RNN-RBM sampling after 300 iterations.}}{37}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces RNN-GSN good state.}}{39}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces RNN-GSN diverged bad state.}}{39}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces SEN frame predictions after 140 epochs.}}{40}
 \addvspace {10\p@ }

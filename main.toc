@@ -15,18 +15,19 @@
 \contentsline {section}{\numberline {5.1}Recurrent nature of deep GSNs}{21}
 \contentsline {section}{\numberline {5.2}Algorithm}{22}
 \contentsline {section}{\numberline {5.3}Experimental setup}{22}
-\contentsline {chapter}{\numberline {6}Model 2: Recurrent GSN (RNN-GSN)}{25}
-\contentsline {section}{\numberline {6.1}Aside: GSN as a recurrent network}{25}
-\contentsline {subsection}{\numberline {6.1.1}Untied GSN on sequenced MNIST}{26}
-\contentsline {section}{\numberline {6.2}Extending the walkback procedure to sequenced inputs}{27}
-\contentsline {section}{\numberline {6.3}RNN-GSN: Generalizing the EM training model for the TGSN}{29}
-\contentsline {section}{\numberline {6.4}Algorithm}{29}
-\contentsline {section}{\numberline {6.5}Experimental setup}{29}
-\contentsline {chapter}{\numberline {7}Model 3: Sequence Encoder Network (SEN)}{32}
-\contentsline {section}{\numberline {7.1}Algorithm}{32}
-\contentsline {section}{\numberline {7.2}Experimental setup}{33}
-\contentsline {chapter}{\numberline {8}Discussion of Results}{34}
-\contentsline {section}{\numberline {8.1}Samples from RNN-RBM on sequenced MNIST}{34}
-\contentsline {section}{\numberline {8.2}Bouncing balls videos dataset}{34}
-\contentsline {section}{\numberline {8.3}CMU motion capture dataset}{35}
-\contentsline {chapter}{\numberline {9}Conclusion}{36}
+\contentsline {chapter}{\numberline {6}Model 2: Recurrent GSN (RNN-GSN)}{26}
+\contentsline {section}{\numberline {6.1}Aside: GSN as a recurrent network}{26}
+\contentsline {subsection}{\numberline {6.1.1}Untied GSN on sequenced MNIST}{27}
+\contentsline {section}{\numberline {6.2}Extending the walkback procedure to sequenced inputs}{28}
+\contentsline {section}{\numberline {6.3}RNN-GSN: Generalizing the EM training model for the TGSN}{30}
+\contentsline {section}{\numberline {6.4}Algorithm}{31}
+\contentsline {section}{\numberline {6.5}Experimental setup}{31}
+\contentsline {chapter}{\numberline {7}Model 3: Sequence Encoder Network (SEN)}{33}
+\contentsline {section}{\numberline {7.1}Algorithm}{33}
+\contentsline {chapter}{\numberline {8}Discussion of Results}{36}
+\contentsline {section}{\numberline {8.1}Samples from RNN-RBM on sequenced MNIST}{36}
+\contentsline {section}{\numberline {8.2}Bouncing balls videos dataset}{36}
+\contentsline {section}{\numberline {8.3}CMU motion capture dataset}{38}
+\contentsline {section}{\numberline {8.4}Results}{39}
+\contentsline {section}{\numberline {8.5}Future Work}{40}
+\contentsline {chapter}{\numberline {9}Conclusion}{42}

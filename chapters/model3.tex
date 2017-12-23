@@ -1,6 +1,13 @@
-The TGSN and RNN-GSN models have shown the advantage so far by decoupling input representation from sequence representation. However, the sequence complexity learned still has a limit by the RNN representation capacity over the input latent space. We can generalize this decoupling idea even further by creating an alternating structure with these input representation and sequence representation layers, inspired by convolutional neural networks with alternating convolutional and dimensionality reduction layers \cite{lenet5}. The Sequence Encoder Network (SEN) is able to stack these input and sequence representational layers to learn representations of the sequence dynamics across many layers to enable a much higher capacity for complex inputs.
+The TGSN and RNN-GSN models have shown the idea so far of decoupling input representation from sequence representation. However, the sequence complexity learned still has a limit by the RNN representation capacity over the input latent space. We can generalize this decoupling idea even further by creating an alternating structure with these input representation and sequence representation layers, inspired by convolutional neural networks with alternating convolutional and dimensionality reduction layers \cite{lenet5}. The Sequence Encoder Network (SEN) is able to stack these input and sequence representational layers to learn combinations of representations for the sequence dynamics across many layers to enable a much higher capacity for complex inputs.
 
 \section{Algorithm}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{sen_arch}
+\caption{Sequence Encoder Network architecture. H is GSN hiddens, V is RNN hiddens.}
+\end{figure}
+
 The SEN algorithm extends the RNN-GSN by continuing to learn representations on top of the sequence representations \(V\): 
 \begin{enumerate}
 \item Use a GSN to learn the generative input representation \(H^0\) of the input \(X\)
@@ -12,7 +19,11 @@ The SEN algorithm extends the RNN-GSN by continuing to learn representations on 
 
 Intuitively, these extra layers enable the network to represent hierarchical sequence dynamics from learning transitions between sequence representation states. This hierarchical property allows for much longer or more complex time series interactions.
 
-Because we are stacking the RNN-GSN layers, the EM approach for training reconstruction and sequences separately would take layerwise pretraining. For the SEN, we are going to combine the forward pass and train both the reconstruction GSN parameters and sequence RNN parameters at the same time.
+The sequence representations can also be interpreted as attractor networks\cite{mathis-mozer} arranged in a hierarchical manner, learning combinations of local sequence states to form global representations. The first GSN over the learned RNN states \(V_0\) forms a localist-attractor module, where the further layered RNN and GSN hidden states reduce the dimensionality and learn increasingly global representations of the sequence state space.
+
+Because we are essentially stacking RNN-GSN layers, the EM approach for training reconstruction and sequences separately would benefit from layerwise pretraining. For the SEN, we combine the forward passes and train both the reconstruction GSN parameters and sequence RNN parameters at the same time to avoid this issue.
+
+While the SEN presented here uses GSN and RNN layers, it can be implemented as any encoder-decoder model that stores hidden state (VAE, convolutional autoencoder, etc.), and then any recurrent model (LSTM, GRU, etc.) to transition between hidden states used by the decoder.
 
  \begin{algorithm}[h!]
 	\KwIn{training data \(X\) from a sequential distribution \(D\)}
@@ -26,6 +37,5 @@ Because we are stacking the RNN-GSN layers, the EM approach for training reconst
 	\caption{ SEN Algorithm }
 \end{algorithm}
 
-\section{Experimental setup}
 
-We stacked two RNN-GSNs with the same layers and noise as in Chapter 6. The SEN is still training on sequenced MNIST as well as the experiments in Discussion...
+

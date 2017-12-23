@@ -36,7 +36,7 @@ Learning with untied weights is much slower, but still provides evidence that th
 \caption{Untied GSN sampling after 300 iterations.}
 \end{figure}
 
-A baseline LSTM network is compared to this untied GSN in the Discussion. However, the quality of images shown here encourage the use of separate parameters to decouple sequential learning from input representation learning.
+The quality of images shown here encourage the use of separate parameters to decouple sequential learning from input representation learning.
 
 \section{Extending the walkback procedure to sequenced inputs}
 
@@ -54,9 +54,16 @@ The general process for creating sequential walkbacks described here is as follo
 \end{algorithm}
 
 \section{RNN-GSN: Generalizing the EM training model for the TGSN}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=0.8\textwidth]{rnngsn_arch}
+\caption{Recurrent GSN architecture. H is GSN hiddens, V is RNN hiddens.}
+\end{figure}
+
 The EM model is easier to train and appears to have better mixing in both the input and sequence spaces compared to the online learning model. However, due to the simple regression step, it is unable to represent complex sequences in the representation space. A more general model is necessary to encode complex data in both input and representation spaces.
 
-Ultimately, this model generalizes the TGSN by alternating between finding a good representation for inputs and a good representation for sequences. This way, the GSNs can optimize specifically for reconstruction or prediction rather than making the hidden representation learn both. Further, by making the sequence prediction GSN layer recurrent over the top layer of the input reconstruction GSN layer, this system can learn complex, nonlinear sequence representations over the modes of the input space, capturing a very large possibility of sequential data distributions. These two specified layers can then be repeated to form deep, generalized representations of sequential data.
+Ultimately, this model generalizes the TGSN by alternating between finding a good representation for inputs and a good representation for sequences. Instead of a direct encoding \(H_{t} \rightarrow H_{t+1}\), this model learns the encoding of \(P(H_{t+1}|H_{t}...H_{0})\) This way, the GSNs can optimize specifically for reconstruction or prediction rather than making the hidden representation learn both. Further, by making the sequence prediction GSN layer recurrent over the top layer of the input reconstruction GSN layer, this system can learn complex, nonlinear sequence representations over the modes of the input space, capturing a very large possibility of sequential data distributions. These two specified layers can then be repeated to form deep, generalized representations of sequential data.
 
 \section{Algorithm}
 This algorithm also alternates between training the reconstruction GSN parameters and prediction GSN for transitions.

@@ -77,6 +77,12 @@ Alan~J Lockett and Risto Miikkulainen.
 \newblock Technical Report AI-09-04, Department of Computer Sciences, the
   University of Texas at Austin, 2009.
 
+\bibitem{mathis-mozer}
+Donald~W. Mathis and Michael~C. Mozer.
+\newblock Conscious and unconscious perception: A computational theory.
+\newblock In {\em Proceedings of the Eighteenth Annual Conference of the
+  Cognitive Science Society}, pages 324--328. Erlbaum, 1996.
+
 \bibitem{ranzato07}
 Marc'Aurelio Ranzato and Yann LeCun.
 \newblock A sparse and locally shift invariant feature extractor applied to
